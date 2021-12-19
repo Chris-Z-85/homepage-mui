@@ -1,9 +1,7 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
+import { Grid, Typography, Button, Stack } from "@mui/material";
 import Chris from "../images/chris_z.svg";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Hero = () => {

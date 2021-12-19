@@ -1,8 +1,6 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+import { Typography, Grid, Button, Stack } from "@mui/material";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -47,7 +45,7 @@ const About = () => {
           </p>
           <p>
             My current development environment consists of
-            <b>macOS, Visual Studio Code</b> and <b>GitHub</b>.
+            <b> macOS, Visual Studio Code</b> and <b>GitHub</b>.
           </p>
           <p>Check out my work. Get in touch. Let's work together!</p>
         </Typography>
