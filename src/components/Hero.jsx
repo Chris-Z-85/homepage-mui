@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Button, Stack } from "@mui/material";
-import Chris from "../images/chris_z.svg";
+import Chris from "../images/chris_z-circle.svg";
 
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Box, Stack, Button, Typography } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
+import Link from "@mui/icons-material/Link";
 
 const Project = ({ props }) => {
   return (
@@ -17,12 +18,13 @@ const Project = ({ props }) => {
         <Stack direction="row" spacing={2}>
           {props.github !== "" && (
             <Button variant="contained" href={props.github} target="_blank">
-              GITHUB <i class="fas fa-external-link-alt"></i>
+              GITHUB <Link />
+              <i class="fas fa-external-link-alt"></i>
             </Button>
           )}
           {props.demo !== "" && (
             <Button variant="outlined" href={props.demo} target="_blank">
-              DEMO <i class="fas fa-external-link-alt"></i>
+              DEMO <Link /> <i class="fas fa-external-link-alt"></i>
             </Button>
           )}
         </Stack>
