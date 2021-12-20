@@ -36,7 +36,7 @@ const Skills = () => {
     { name: "MongoDB", icon: "teenyicons:mongodb-outline" },
   ];
   return (
-    <Container>
+    <Container sx={{ height: "100vh" }}>
       <Typography
         variant="h2"
         component="div"
