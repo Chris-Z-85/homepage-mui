@@ -15,16 +15,16 @@ const Hero = () => {
           sx={{ width: "70vw", height: "80vh" }}
         >
           <Grid item>
-            <Typography variant="h3" component="div" gutterBottom>
+            <Typography variant="h4" component="div" sx={{ mb: 5 }}>
               Hey, my name is
             </Typography>
-            <Typography variant="h2" component="div" gutterBottom>
+            <Typography variant="h2" component="div" sx={{ mb: 5 }} s>
               Chris Z.
             </Typography>
-            <Typography variant="h3" component="div" gutterBottom>
+            <Typography variant="h3" component="div" sx={{ mb: 5 }}>
               I'm Frontend Developer
             </Typography>
-            <Typography variant="h4" component="div" gutterBottom>
+            <Typography variant="h4" component="div" sx={{ mb: 5 }}>
               I build websites.
             </Typography>
             <Stack spacing={2} direction="row">

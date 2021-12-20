@@ -83,6 +83,7 @@ const Navbar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
+                size="large"
               >
                 {page}
               </Button>
