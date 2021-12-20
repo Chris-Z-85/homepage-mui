@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </ColorModeContextProvider>
   );
 };

@@ -39,7 +39,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <Container sx={{ height: "100vh" }}>
+    <Container>
       <Typography
         variant="h2"
         component="div"
@@ -57,7 +57,13 @@ const Portfolio = () => {
       <Typography textAlign="center" gutterBottom>
         Check out some of the stuff, that I have built.
       </Typography>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: "3rem" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "3rem",
+        }}
+      >
         {projects.map((project, index) => (
           <Project props={project} key={index} />
         ))}
