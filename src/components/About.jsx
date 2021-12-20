@@ -16,7 +16,7 @@ const About = () => {
       sx={{ height: "100vh" }}
     >
       <Typography
-        variant="h1"
+        variant="h2"
         component="div"
         sx={{
           display: "flex",
