@@ -14,7 +14,6 @@ import {
 
 import MenuIcon from "@mui/icons-material/Menu";
 
-import { useTheme } from "@mui/material/styles";
 import { useColorMode } from "../theme.context";
 
 const pages = ["Home", "About", "Skills", "Portfolio", "Contact"];

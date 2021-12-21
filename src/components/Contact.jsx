@@ -10,24 +10,12 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Heading from "./Heading";
 
 const Contact = () => {
   return (
     <Container>
-      <Typography
-        variant="h2"
-        component="div"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        Contact
-        <Typography variant="h3" component="div" gutterBottom>
-          Get in touch
-        </Typography>
-      </Typography>
+      <Heading title="Contact" subtitle="Get in touch" />
       <Typography>
         Got a question or want to work together? Fill in your info in the form
         below and I look forward to hearing from you!

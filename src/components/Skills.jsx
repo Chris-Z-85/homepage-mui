@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import { Icon } from "@iconify/react";
+import Heading from "./Heading";
 
 const Skills = () => {
   const stack = [
@@ -37,20 +38,7 @@ const Skills = () => {
   ];
   return (
     <Container sx={{ height: "100vh" }}>
-      <Typography
-        variant="h2"
-        component="div"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        Skills
-        <Typography variant="h3" component="div" gutterBottom>
-          My powers
-        </Typography>
-      </Typography>
+      <Heading title="Skills" subtitle="My powers" />
       <Typography textAlign="center" gutterBottom>
         The tools and technologies I use:
       </Typography>

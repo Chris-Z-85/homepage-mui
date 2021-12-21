@@ -19,6 +19,20 @@ export const ColorModeContextProvider = ({ children }) => {
       createTheme({
         palette: {
           mode,
+          primary: {
+            main: "#7c3aed",
+          },
+        },
+        typography: {
+          // fontFamily: "Roboto", "Helvetica", "Arial", sans-serif"
+          fontFamily: [
+            "Roboto",
+            "Helvetica",
+            "Arial",
+            "sans-serif",
+            "Rubik",
+          ].join(","),
+          fontSize: 16,
         },
       }),
     [mode]

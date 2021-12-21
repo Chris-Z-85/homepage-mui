@@ -4,6 +4,7 @@ import Project from "./Project";
 import gpt3 from "../../src/images/projects/gpt-3.png";
 import polskieni from "../../src/images/projects/polskieni.png";
 import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
+import Heading from "./Heading";
 
 const Portfolio = () => {
   const projects = [
@@ -40,20 +41,7 @@ const Portfolio = () => {
 
   return (
     <Container>
-      <Typography
-        variant="h2"
-        component="div"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        Portfolio
-        <Typography variant="h3" component="div" gutterBottom>
-          My work
-        </Typography>
-      </Typography>
+      <Heading title="Portfolio" subtitle="My work" />
       <Typography textAlign="center" gutterBottom>
         Check out some of the stuff, that I have built.
       </Typography>

@@ -12,6 +12,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import Heading from "./Heading";
 
 const About = () => {
   return (
@@ -20,22 +21,8 @@ const About = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      sx={{ height: "100vh" }}
     >
-      <Typography
-        variant="h2"
-        component="div"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        About
-        <Typography variant="h3" component="div" gutterBottom>
-          Myself
-        </Typography>
-      </Typography>
+      <Heading title="About" subtitle="Myself" />
       <Grid container justifyContent="center" sx={{ width: "70vw" }}>
         <Typography variant="body1">
           <Typography variant="body1">
