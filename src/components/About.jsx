@@ -13,6 +13,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Heading from "./Heading";
+import Resume from "../Chris_Zbrojkiewicz_Resume.pdf";
 
 const About = () => {
   return (
@@ -90,11 +91,7 @@ const About = () => {
                 </clipPath>
               </defs>
             </svg>
-            <Button
-              variant="contained"
-              href="../src/Chris_Zbrojkiewicz_Resume.pdf"
-              target="_blank"
-            >
+            <Button variant="contained" href={Resume} target="_blank">
               Resume&nbsp;
               <CloudDownloadIcon fontSize="1rem" />
             </Button>
