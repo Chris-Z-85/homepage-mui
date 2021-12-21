@@ -7,8 +7,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <Container>
-      <Stack spacing={2} direction="row">
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+        alignItems: "center",
+        marginTop: "2rem",
+      }}
+    >
+      <Stack spacing={2} direction="row" sx={{ padding: "1rem" }}>
         <IconButton color="primary" href="mailto:chris.z@aol.com">
           <EmailIcon />
         </IconButton>
@@ -27,7 +35,7 @@ const Footer = () => {
           <LinkedInIcon />
         </IconButton>
       </Stack>
-      <Typography>
+      <Typography sx={{ padding: "1rem" }}>
         © {currentYear}| Designed & coded by Chris Zbrojkiewicz
       </Typography>
     </Container>

@@ -23,25 +23,27 @@ const About = () => {
       alignItems="center"
     >
       <Heading title="About" subtitle="Myself" />
-      <Grid container justifyContent="center" sx={{ width: "70vw" }}>
-        <Typography variant="body1">
-          <Typography variant="body1">
+      <Grid container justifyContent="center">
+        <Typography>
+          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
             My name is <b>Chris Z.</b> and I am a passionate
-            <b>Frontend Developer </b>from Poland, based in the United Kingdom.
+            <b> Frontend Developer </b>from Poland, based in the United Kingdom.
           </Typography>
-          <Typography variant="body1">
+          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
             I have working proficiency in <b>HTML, CSS, JavaScript</b> and
-            <b>React</b>.
+            <b> React</b>.
           </Typography>
-          <Typography variant="body1">
+          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
             I am comfortable working with the <b>command line </b>and using
             <b> Git</b> version control.
           </Typography>
-          <Typography variant="body1">
+          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
             My current development environment consists of
             <b> macOS, Visual Studio Code</b> and <b>GitHub</b>.
           </Typography>
-          <p>Check out my work. Get in touch. Let's work together!</p>
+          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
+            Check out my work. Get in touch. Let's work together!
+          </Typography>
         </Typography>
         <Grid
           container
@@ -61,7 +63,9 @@ const About = () => {
               alignItems: "center",
             }}
           >
-            <Typography variant="h6">Download My Resume</Typography>
+            <Typography variant="h6" sx={{ fontFamily: "Permanent Marker" }}>
+              Download My Resume
+            </Typography>
             <svg
               width="57"
               height="61"
@@ -91,7 +95,8 @@ const About = () => {
               href="../src/Chris_Zbrojkiewicz_Resume.pdf"
               target="_blank"
             >
-              Resume <CloudDownloadIcon fontSize="1rem" />
+              Resume&nbsp;
+              <CloudDownloadIcon fontSize="1rem" />
             </Button>
           </Box>
           <Stack spacing={2} direction="row">

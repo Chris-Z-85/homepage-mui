@@ -9,6 +9,7 @@ import Heading from "./Heading";
 const Portfolio = () => {
   const projects = [
     {
+      id: 1,
       title: "GPT-3 OpenAI Website",
       subheading: "Figma project turned into reality!",
       description:
@@ -19,6 +20,7 @@ const Portfolio = () => {
       image: gpt3,
     },
     {
+      id: 2,
       title: "Polish Northern Ireland Community",
       subheading: "Sunday School in Northern Ireland",
       description: "Homepage of Polish Network in Northern Ireland",
@@ -28,10 +30,11 @@ const Portfolio = () => {
       image: polskieni,
     },
     {
+      id: 3,
       title: "Fretboard Master",
       subheading: "Fretboard tool for guitarists",
       description:
-        "The Fretboard Master is a tool designed to help musicians memorize fret note names in an easy and fun way. It features the guitar, bass or ukulele customizable fretboard with multiples tools like tuning adjustment and note display. The game mode enables users to practize fretboard navigation skills on 3 difficulty levels.",
+        "A tool designed to help guitarists memorize fret note names. It features the guitar, bass or ukulele customizable fretboard with multiples tools like tuning adjustment and note display. The game mode enables users to practize fretboard navigation skills on 3 difficulty levels.",
       stack: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Chris-Z-85/fretboard-master.github.io",
       demo: "https://chris-z-85.github.io/fretboard-master.github.io/",
@@ -42,7 +45,7 @@ const Portfolio = () => {
   return (
     <Container>
       <Heading title="Portfolio" subtitle="My work" />
-      <Typography textAlign="center" gutterBottom>
+      <Typography textAlign="center" sx={{ marginBottom: "2rem" }}>
         Check out some of the stuff, that I have built.
       </Typography>
       <Box
@@ -56,7 +59,7 @@ const Portfolio = () => {
           <Project props={project} key={index} />
         ))}
       </Box>
-      <Typography textAlign="center" gutterBottom>
+      <Typography textAlign="center" sx={{ marginTop: "2rem" }}>
         You can also find my other projects on{" "}
         <a href="https://github.com/Chris-Z-85">GitHub</a> and{" "}
         <a href="https://codepen.io/chris-z">CodePen</a>.
