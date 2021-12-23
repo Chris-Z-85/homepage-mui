@@ -14,16 +14,17 @@ const Skills = () => {
     { name: "Redux", icon: "akar-icons:redux-fill" },
     { name: "Git", icon: "ion:git-branch-outline" },
     { name: "Github", icon: "akar-icons:github-outline-fill" },
+    { name: "Command Line", icon: "bi:terminal" },
+    { name: "Responsive Design", icon: "fluent:phone-desktop-16-regular" },
     { name: "BEM Methodology", icon: "simple-icons:bem" },
     { name: "Sass", icon: "cib:sass-alt" },
     { name: "Styled Components", icon: "simple-icons:styledcomponents" },
     { name: "RESTful API", icon: "ant-design:api-outlined" },
+    { name: "Material UI", icon: "simple-icons:mui" },
     { name: "Contentful", icon: "simple-icons:contentful" },
     { name: "Postgres SQL", icon: "simple-icons:postgresql" },
-    { name: "Command Line", icon: "bi:terminal" },
     { name: "VS Code", icon: "tabler:brand-visual-studio" },
     { name: "Figma", icon: "akar-icons:figma-fill" },
-    { name: "Responsive Design", icon: "fluent:phone-desktop-16-regular" },
   ];
 
   const learning = [
@@ -37,60 +38,29 @@ const Skills = () => {
     { name: "MongoDB", icon: "teenyicons:mongodb-outline" },
   ];
   return (
-    <Container>
+    <Container
+    // sx={{
+    //   display: "flex",
+    //   flexDirection: "column",
+    //   alignItems: "center",
+    //   justifyContent: "flex-end",
+    // }}
+    >
       <Heading title="Skills" subtitle="My powers" />
       <Typography textAlign="center" sx={{ marginBottom: "2rem" }}>
         The tools and technologies I use:
       </Typography>
       <Grid
         container
-        gap="1rem"
-        sx={{ display: "flex", justifyContent: "center", alignItem: "center" }}
-        columns={{ lg: 12 }}
+        spacing={3}
+        // rowSpacing={2}
+        // columnSpacing={{ md: 1 }}
+        // direction="row"
+        // justifyContent="space-evenly"
+        // alignItems="center"
       >
         {stack.map((item, index) => (
-          <Card
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "120px",
-              height: "120px",
-              textAlign: "center",
-              gap: "10px",
-              padding: "5px",
-            }}
-          >
-            <Icon
-              icon={item.icon}
-              inline={true}
-              style={{ fontSize: "2rem" }}
-              key={index}
-            />
-            {item.name}
-          </Card>
-        ))}
-      </Grid>
-      <Typography
-        variant="h5"
-        component="div"
-        textAlign="center"
-        color="primary"
-        sx={{ padding: "2rem" }}
-      >
-        Learning
-      </Typography>
-      <Typography textAlign="center" sx={{ marginBottom: "2rem" }}>
-        I am currently expanding my skills by learning:
-      </Typography>
-      <Grid
-        container
-        gap="1rem"
-        sx={{ display: "flex", justifyContent: "center", alignItem: "center" }}
-      >
-        {learning.map((item, index) => (
-          <Grid item>
+          <Grid item md={3} key={index}>
             <Card
               sx={{
                 display: "flex",
@@ -108,7 +78,51 @@ const Skills = () => {
                 icon={item.icon}
                 inline={true}
                 style={{ fontSize: "2rem" }}
-                key={index}
+              />
+              {item.name}
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+      <Typography
+        variant="h5"
+        component="div"
+        textAlign="center"
+        color="primary"
+        sx={{ padding: "2rem" }}
+      >
+        Learning
+      </Typography>
+      <Typography textAlign="center" sx={{ marginBottom: "2rem" }}>
+        I am currently expanding my skills by learning:
+      </Typography>
+      <Grid
+        container
+        rowSpacing={2}
+        columnSpacing={{ md: 1 }}
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
+      >
+        {learning.map((item, index) => (
+          <Grid item md={3} key={index}>
+            <Card
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "120px",
+                height: "120px",
+                textAlign: "center",
+                gap: "10px",
+                padding: "5px",
+              }}
+            >
+              <Icon
+                icon={item.icon}
+                inline={true}
+                style={{ fontSize: "2rem" }}
               />
               {item.name}
             </Card>

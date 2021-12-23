@@ -24,7 +24,6 @@ export const ColorModeContextProvider = ({ children }) => {
           },
         },
         typography: {
-          // fontFamily: "Roboto", "Helvetica", "Arial", sans-serif"
           fontFamily: [
             "Roboto",
             "Helvetica",
