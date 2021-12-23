@@ -31,53 +31,71 @@ const Contact = () => {
         Fill in your info in the form below and I look forward to hearing from
         you!
       </Typography>
-      <Box
-        component="form"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1rem",
-          // width: "50%",
-        }}
-        noValidate
-        autoComplete="off"
+      <form
+        name="contact"
+        method="POST"
+        action="https://formsubmit.co/chris.z@aol.com"
+        class="contact__form"
       >
         <Box
+          component="form"
           sx={{
             display: "flex",
+            flexDirection: "column",
             gap: "1rem",
           }}
+          noValidate
+          autoComplete="off"
         >
-          <TextField
-            id="name"
-            label="Name"
-            variant="filled"
-            required
+          <Box
             sx={{
-              width: "50%",
+              display: "flex",
+              gap: "1rem",
             }}
-          />
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New email from Homepage"
+            ></input>
+            {/* <input
+              type="hidden"
+              name="_next"
+              value="https://chris-z.netlify.app/thankyou.html"
+            ></input> */}
+            <TextField
+              id="name"
+              label="Name"
+              variant="filled"
+              required
+              sx={{
+                width: "50%",
+              }}
+            />
+            <TextField
+              id="email"
+              label="Email"
+              variant="filled"
+              required
+              type="email"
+              sx={{
+                width: "50%",
+              }}
+            />
+          </Box>
           <TextField
-            id="email"
-            label="Email"
+            id="message"
+            label="Message"
             variant="filled"
+            multiline
+            rows={6}
             required
-            type="email"
-            sx={{
-              width: "50%",
-            }}
           />
+          <Button type="submit" variant="contained">
+            Send
+          </Button>
         </Box>
-        <TextField
-          id="message"
-          label="Message"
-          variant="filled"
-          multiline
-          rows={6}
-          required
-        />
-        <Button variant="contained">Send</Button>
-      </Box>
+      </form>
     </Container>
   );
 };

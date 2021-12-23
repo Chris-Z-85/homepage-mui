@@ -14,7 +14,7 @@ const Heading = ({ title, subtitle }) => {
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
     color: ${grey[800]};
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 1000;
     line-height: 1.2;
   `;
@@ -22,9 +22,9 @@ const Heading = ({ title, subtitle }) => {
   const Subtitle = styled.h3`
     color: ${deepPurple[500]};
     position: absolute;
-    bottom: 5.5rem;
+    bottom: 3rem;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 1000;
     margin: 0;
   `;

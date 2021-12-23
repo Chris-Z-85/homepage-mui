@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Box, Stack, Button, Typography, Card } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
-import Link from "@mui/icons-material/Link";
 import { grey } from "@mui/material/colors/";
 
 const Project = ({ props }) => {
@@ -36,23 +35,22 @@ const Project = ({ props }) => {
         >
           {props.github !== "" && (
             <Button
-              variant="contained"
+              variant="outlined"
               href={props.github}
               target="_blank"
               sx={{ width: "120px" }}
             >
-              GITHUB <Link />
-              <i class="fas fa-external-link-alt"></i>
+              GITHUB
             </Button>
           )}
           {props.demo !== "" && (
             <Button
-              variant="contained"
+              variant="outlined"
               href={props.demo}
               target="_blank"
               sx={{ width: "120px" }}
             >
-              DEMO <Link /> <i class="fas fa-external-link-alt"></i>
+              DEMO
             </Button>
           )}
         </Stack>

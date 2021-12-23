@@ -52,48 +52,31 @@ const About = () => {
           }}
         >
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            My name is{" "}
-            <span style={{ color: `${deepPurple[500]}` }}>Chris Z.</span> and I
-            am a passionate
-            <span style={{ color: `${deepPurple[500]}` }}>
-              {" "}
-              Frontend Developer{" "}
-            </span>
+            My name is <b>Chris Z.</b> and I am a passionate
+            <b> Frontend Developer </b>
             from Poland, based in the United Kingdom.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            I have working proficiency in{" "}
-            <span style={{ color: `${deepPurple[500]}` }}>
-              HTML, CSS, JavaScript
-            </span>{" "}
-            and
-            <span style={{ color: `${deepPurple[500]}` }}> React</span>.
+            I have working proficiency in <b>HTML, CSS, JavaScript</b> and
+            <b> React</b>.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            I am comfortable working with the{" "}
-            <span style={{ color: `${deepPurple[500]}` }}>command line </span>
-            and using <span style={{ color: `${deepPurple[500]}` }}>
-              Git
-            </span>{" "}
-            version control.
+            I am comfortable working with the <b>command line </b>
+            and using <b>Git</b> version control.
           </Typography>
-          <Typography sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "3rem" }}>
             My current development environment consists of
-            <span style={{ color: `${deepPurple[500]}` }}>
-              {" "}
-              macOS, Visual Studio Code
-            </span>{" "}
-            and <span style={{ color: `${deepPurple[500]}` }}>GitHub</span>.
+            <b> macOS, Visual Studio Code</b> and <b>GitHub</b>.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            Check out my work. Get in touch. Let's work together!
+            Check out my work. Get in touch. Let's work together !
           </Typography>
         </Card>
         <Grid
           container
           justifyContent="space-between"
           sx={{
-            width: "70%",
+            width: "50%",
             padding: "2rem",
             display: "flex",
             alignItems: "flex-end",

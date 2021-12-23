@@ -47,7 +47,7 @@ const Hero = () => {
             </Stack>
           </Grid>
           <Grid item xs={6} md={4}>
-            <img src={Chris} alt="Chris Z." />
+            <img src={Chris} alt="Chris Z." style={{ height: "400px" }} />
           </Grid>
         </Grid>
       </Grid>
