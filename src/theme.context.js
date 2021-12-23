@@ -1,5 +1,6 @@
 import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { deepPurple } from "@mui/material/colors/";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -20,7 +21,7 @@ export const ColorModeContextProvider = ({ children }) => {
         palette: {
           mode,
           primary: {
-            main: "#7c3aed",
+            main: `${deepPurple[500]}`,
           },
         },
         typography: {

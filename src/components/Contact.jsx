@@ -24,10 +24,10 @@ const Contact = () => {
       }}
     >
       <Heading title="Contact" subtitle="Get in touch" />
-      <Typography sx={{ marginBottom: "2rem" }}>
+      <Typography sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
         Got a question or want to work together?
       </Typography>
-      <Typography sx={{ marginBottom: "2rem" }}>
+      <Typography sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
         Fill in your info in the form below and I look forward to hearing from
         you!
       </Typography>

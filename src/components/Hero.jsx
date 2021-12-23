@@ -38,10 +38,10 @@ const Hero = () => {
               I build websites.
             </Typography>
             <Stack spacing={2} direction="row">
-              <Button variant="contained">
-                Hire me <ArrowForwardIosIcon fontSize="1rem" />
+              <Button variant="outlined" sx={{ width: "150px" }}>
+                About me <ArrowForwardIosIcon fontSize="1rem" />
               </Button>
-              <Button variant="outlined">
+              <Button variant="outlined" sx={{ width: "150px" }}>
                 My works <ArrowForwardIosIcon fontSize="1rem" />
               </Button>
             </Stack>

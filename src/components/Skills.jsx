@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Card } from "@mui/material";
 import { Icon } from "@iconify/react";
 import Heading from "./Heading";
+import { deepPurple } from "@mui/material/colors/";
 
 const Skills = () => {
   const stack = [
@@ -38,27 +39,15 @@ const Skills = () => {
     { name: "MongoDB", icon: "teenyicons:mongodb-outline" },
   ];
   return (
-    <Container
-    // sx={{
-    //   display: "flex",
-    //   flexDirection: "column",
-    //   alignItems: "center",
-    //   justifyContent: "flex-end",
-    // }}
-    >
+    <Container sx={{ width: "50%" }}>
       <Heading title="Skills" subtitle="My powers" />
-      <Typography textAlign="center" sx={{ marginBottom: "2rem" }}>
+      <Typography
+        textAlign="center"
+        sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
+      >
         The tools and technologies I use:
       </Typography>
-      <Grid
-        container
-        spacing={3}
-        // rowSpacing={2}
-        // columnSpacing={{ md: 1 }}
-        // direction="row"
-        // justifyContent="space-evenly"
-        // alignItems="center"
-      >
+      <Grid container spacing={3}>
         {stack.map((item, index) => (
           <Grid item md={3} key={index}>
             <Card
@@ -79,7 +68,9 @@ const Skills = () => {
                 inline={true}
                 style={{ fontSize: "2rem" }}
               />
-              {item.name}
+              <Typography sx={{ color: `${deepPurple[500]}` }}>
+                {item.name}
+              </Typography>
             </Card>
           </Grid>
         ))}
@@ -89,11 +80,14 @@ const Skills = () => {
         component="div"
         textAlign="center"
         color="primary"
-        sx={{ padding: "2rem" }}
+        sx={{ padding: "2rem", marginTop: "2rem" }}
       >
         Learning
       </Typography>
-      <Typography textAlign="center" sx={{ marginBottom: "2rem" }}>
+      <Typography
+        textAlign="center"
+        sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
+      >
         I am currently expanding my skills by learning:
       </Typography>
       <Grid
@@ -124,7 +118,9 @@ const Skills = () => {
                 inline={true}
                 style={{ fontSize: "2rem" }}
               />
-              {item.name}
+              <Typography sx={{ color: `${deepPurple[500]}` }}>
+                {item.name}
+              </Typography>
             </Card>
           </Grid>
         ))}

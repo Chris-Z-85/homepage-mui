@@ -11,12 +11,11 @@ const Footer = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: "1rem",
         alignItems: "center",
-        marginTop: "2rem",
+        marginTop: "150px",
       }}
     >
-      <Stack spacing={2} direction="row" sx={{ padding: "1rem" }}>
+      <Stack spacing={2} direction="row">
         <IconButton color="primary" href="mailto:chris.z@aol.com">
           <EmailIcon />
         </IconButton>

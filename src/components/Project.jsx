@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Box, Stack, Button, Typography, Card } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 import Link from "@mui/icons-material/Link";
+import { grey } from "@mui/material/colors/";
 
 const Project = ({ props }) => {
   return (
@@ -34,13 +35,23 @@ const Project = ({ props }) => {
           }}
         >
           {props.github !== "" && (
-            <Button variant="contained" href={props.github} target="_blank">
+            <Button
+              variant="contained"
+              href={props.github}
+              target="_blank"
+              sx={{ width: "120px" }}
+            >
               GITHUB <Link />
               <i class="fas fa-external-link-alt"></i>
             </Button>
           )}
           {props.demo !== "" && (
-            <Button variant="outlined" href={props.demo} target="_blank">
+            <Button
+              variant="contained"
+              href={props.demo}
+              target="_blank"
+              sx={{ width: "120px" }}
+            >
               DEMO <Link /> <i class="fas fa-external-link-alt"></i>
             </Button>
           )}
@@ -68,8 +79,14 @@ const Project = ({ props }) => {
             <CircleIcon sx={{ fill: "#FF4A4A", fontSize: "1rem" }} />
             <CircleIcon sx={{ fill: "#FEB83D", fontSize: "1rem" }} />
             <CircleIcon sx={{ fill: "#01C542", fontSize: "1rem" }} />
+            <Box
+              sx={{
+                backgroundColor: `${grey[800]}`,
+                width: "600px",
+                borderRadius: "5px",
+              }}
+            ></Box>
           </Box>
-
           <img src={props.image} alt={props.title} style={{ width: "100%" }} />
         </Box>
       </a>

@@ -6,6 +6,7 @@ import {
   Button,
   Stack,
   IconButton,
+  Card,
 } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -14,6 +15,26 @@ import EmailIcon from "@mui/icons-material/Email";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Heading from "./Heading";
 import Resume from "../Chris_Zbrojkiewicz_Resume.pdf";
+import styled from "styled-components";
+import chris_z from "../../src/images/chris_z.svg";
+import { grey, deepPurple } from "@mui/material/colors/";
+
+const MiniCv = styled.div`
+  height: 200px;
+  width: 150px;
+  border: 2px solid ${grey[800]};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+`;
+
+const Line = styled.div`
+  height: 1px;
+  width: 100px;
+  border: 1px solid ${grey[800]};
+`;
 
 const About = () => {
   return (
@@ -25,32 +46,54 @@ const About = () => {
     >
       <Heading title="About" subtitle="Myself" />
       <Grid container justifyContent="center">
-        <Typography>
-          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
-            My name is <b>Chris Z.</b> and I am a passionate
-            <b> Frontend Developer </b>from Poland, based in the United Kingdom.
+        <Card
+          sx={{
+            padding: "2rem",
+          }}
+        >
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            My name is{" "}
+            <span style={{ color: `${deepPurple[500]}` }}>Chris Z.</span> and I
+            am a passionate
+            <span style={{ color: `${deepPurple[500]}` }}>
+              {" "}
+              Frontend Developer{" "}
+            </span>
+            from Poland, based in the United Kingdom.
           </Typography>
-          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
-            I have working proficiency in <b>HTML, CSS, JavaScript</b> and
-            <b> React</b>.
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            I have working proficiency in{" "}
+            <span style={{ color: `${deepPurple[500]}` }}>
+              HTML, CSS, JavaScript
+            </span>{" "}
+            and
+            <span style={{ color: `${deepPurple[500]}` }}> React</span>.
           </Typography>
-          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
-            I am comfortable working with the <b>command line </b>and using
-            <b> Git</b> version control.
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            I am comfortable working with the{" "}
+            <span style={{ color: `${deepPurple[500]}` }}>command line </span>
+            and using <span style={{ color: `${deepPurple[500]}` }}>
+              Git
+            </span>{" "}
+            version control.
           </Typography>
-          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
             My current development environment consists of
-            <b> macOS, Visual Studio Code</b> and <b>GitHub</b>.
+            <span style={{ color: `${deepPurple[500]}` }}>
+              {" "}
+              macOS, Visual Studio Code
+            </span>{" "}
+            and <span style={{ color: `${deepPurple[500]}` }}>GitHub</span>.
           </Typography>
-          <Typography sx={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
             Check out my work. Get in touch. Let's work together!
           </Typography>
-        </Typography>
+        </Card>
         <Grid
           container
           justifyContent="space-between"
           sx={{
-            width: "50%",
+            width: "70%",
             padding: "2rem",
             display: "flex",
             alignItems: "flex-end",
@@ -62,10 +105,11 @@ const About = () => {
               flexDirection: "column",
               gap: "1rem",
               alignItems: "center",
+              justifyContent: "space-between",
             }}
           >
             <Typography variant="h6" sx={{ fontFamily: "Permanent Marker" }}>
-              Download My Resume
+              Get In Touch
             </Typography>
             <svg
               width="57"
@@ -91,30 +135,37 @@ const About = () => {
                 </clipPath>
               </defs>
             </svg>
+            <Stack spacing={2} direction="row">
+              <IconButton color="primary" href="mailto:chris.z@aol.com">
+                <EmailIcon sx={{ fontSize: 45 }} />
+              </IconButton>
+              <IconButton
+                color="primary"
+                href="https://github.com/Chris-Z-85"
+                target="_blank"
+              >
+                <GitHubIcon sx={{ fontSize: 45 }} />
+              </IconButton>
+              <IconButton
+                color="primary"
+                href="https://www.linkedin.com/in/chrisZ85/"
+                target="_blank"
+              >
+                <LinkedInIcon sx={{ fontSize: 45 }} />
+              </IconButton>
+            </Stack>
+          </Box>
+          <MiniCv>
+            <img src={chris_z} alt="Chris Z." width="55px" />
+            <Line color="primary" />
+            <Line />
+            <Line />
+            <Line />
             <Button variant="contained" href={Resume} target="_blank">
               Resume&nbsp;
               <CloudDownloadIcon fontSize="1rem" />
             </Button>
-          </Box>
-          <Stack spacing={2} direction="row">
-            <IconButton color="primary" href="mailto:chris.z@aol.com">
-              <EmailIcon />
-            </IconButton>
-            <IconButton
-              color="primary"
-              href="https://github.com/Chris-Z-85"
-              target="_blank"
-            >
-              <GitHubIcon />
-            </IconButton>
-            <IconButton
-              color="primary"
-              href="https://www.linkedin.com/in/chrisZ85/"
-              target="_blank"
-            >
-              <LinkedInIcon />
-            </IconButton>
-          </Stack>
+          </MiniCv>
         </Grid>
       </Grid>
     </Grid>

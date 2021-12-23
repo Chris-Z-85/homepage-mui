@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { grey, deepPurple } from "@mui/material/colors/";
 
 const Heading = ({ title, subtitle }) => {
   const Container = styled.div`
@@ -12,14 +13,14 @@ const Heading = ({ title, subtitle }) => {
   const Title = styled.h2`
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
-    color: #343a40;
+    color: ${grey[800]};
     font-size: 7rem;
     font-weight: 1000;
     line-height: 1.2;
   `;
 
   const Subtitle = styled.h3`
-    color: #7c3aed;
+    color: ${deepPurple[500]};
     position: absolute;
     bottom: 5.5rem;
     text-transform: uppercase;
