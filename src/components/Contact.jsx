@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  FormControl,
-  Input,
-  InputLabel,
-  Button,
-  FormHelperText,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Container, Box, Button, TextField, Typography } from "@mui/material";
 import Heading from "./Heading";
 
 const Contact = () => {
