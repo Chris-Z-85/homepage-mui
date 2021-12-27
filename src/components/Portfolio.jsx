@@ -45,7 +45,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <Container>
+    <Container id="portfolio">
       <Heading title="Portfolio" subtitle="My work" />
       <Typography
         textAlign="center"

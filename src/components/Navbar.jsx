@@ -10,13 +10,14 @@ import {
   Button,
   MenuItem,
   Switch,
+  Link,
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
 import { useColorMode } from "../theme.context";
 
-const pages = ["Home", "About", "Skills", "Portfolio", "Contact"];
+const pages = ["home", "about", "skills", "portfolio", "contact"];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -65,7 +66,14 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link
+                    href={`#${page}`}
+                    underline="none"
+                    color="inherit"
+                    variant="button"
+                  >
+                    {page}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -84,7 +92,9 @@ const Navbar = () => {
                 sx={{ my: 2, color: "white", display: "block" }}
                 size="large"
               >
-                {page}
+                <Link href={`#${page}`} underline="none" color="inherit">
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>

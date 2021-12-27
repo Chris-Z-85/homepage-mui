@@ -43,6 +43,7 @@ const About = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
+      id="about"
     >
       <Heading title="About" subtitle="Myself" />
       <Grid container justifyContent="center">

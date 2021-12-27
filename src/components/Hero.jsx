@@ -1,12 +1,12 @@
 import React from "react";
-import { Grid, Typography, Button, Stack } from "@mui/material";
+import { Grid, Typography, Button, Stack, Link } from "@mui/material";
 import Chris from "../images/chris_z-circle.svg";
 
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Hero = () => {
   return (
-    <Grid container justifyContent="center" sx={{ height: "100vh" }}>
+    <Grid container justifyContent="center" sx={{ height: "100vh" }} id="home">
       <Grid item>
         <Grid
           container
@@ -38,12 +38,16 @@ const Hero = () => {
               I build websites.
             </Typography>
             <Stack spacing={2} direction="row">
-              <Button variant="outlined" sx={{ width: "150px" }}>
-                About me <ArrowForwardIosIcon fontSize="1rem" />
-              </Button>
-              <Button variant="outlined" sx={{ width: "150px" }}>
-                My works <ArrowForwardIosIcon fontSize="1rem" />
-              </Button>
+              <Link href="#about" underline="none" color="inherit">
+                <Button variant="outlined" sx={{ width: "150px" }}>
+                  About me <ArrowForwardIosIcon fontSize="1rem" />
+                </Button>
+              </Link>
+              <Link href="#portfolio" underline="none" color="inherit">
+                <Button variant="outlined" sx={{ width: "150px" }}>
+                  My works <ArrowForwardIosIcon fontSize="1rem" />
+                </Button>
+              </Link>
             </Stack>
           </Grid>
           <Grid item xs={6} md={4}>

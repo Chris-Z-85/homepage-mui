@@ -39,7 +39,7 @@ const Skills = () => {
     { name: "MongoDB", icon: "teenyicons:mongodb-outline" },
   ];
   return (
-    <Container sx={{ width: "50%" }}>
+    <Container sx={{ width: "50%" }} id="skills">
       <Heading title="Skills" subtitle="My powers" />
       <Typography
         textAlign="center"

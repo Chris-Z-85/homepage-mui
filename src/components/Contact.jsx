@@ -12,6 +12,7 @@ const Contact = () => {
         alignItems: "center",
         marginTop: "2rem",
       }}
+      id="contact"
     >
       <Heading title="Contact" subtitle="Get in touch" />
       <Typography sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
