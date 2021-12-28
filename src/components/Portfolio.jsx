@@ -57,11 +57,13 @@ const Portfolio = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
+          justifyItems: "center",
+          alignItems: "center",
           gap: "3rem",
         }}
       >
         {projects.map((project, index) => (
-          <Card>
+          <Card sx={{ padding: "20px", width: "80vw" }}>
             <Project props={project} key={index} />
           </Card>
         ))}

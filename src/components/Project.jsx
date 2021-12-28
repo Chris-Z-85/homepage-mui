@@ -7,8 +7,7 @@ const Project = ({ props }) => {
   return (
     <Grid
       container
-      flexDirection={{ xs: "column", md: "row" }}
-      width="100%"
+      flexDirection={{ xs: "column", md: "row", lg: "row", xl: "row" }}
       gap="3rem"
       alignItems="center"
       justifyContent="center"
@@ -16,7 +15,7 @@ const Project = ({ props }) => {
     >
       <Grid
         item
-        width={{ xs: "100%", md: "50%" }}
+        width={{ xs: "100%", md: "50%", lg: "50%", lx: "50%" }}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -65,7 +64,7 @@ const Project = ({ props }) => {
       <a href={props.demo} target="__blank">
         <Grid
           item
-          width={{ xs: "90vw", md: "35vw" }}
+          width={{ xs: "70vw", md: "30vw" }}
           sx={{
             border: "3px solid grey",
             borderRadius: "10px",

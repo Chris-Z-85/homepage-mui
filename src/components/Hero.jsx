@@ -10,7 +10,6 @@ const Hero = () => {
       container
       justifyContent="center"
       alignItems="center"
-      sx={{ height: "80vh" }}
       marginBottom="200px"
       id="home"
     >

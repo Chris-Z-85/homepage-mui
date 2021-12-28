@@ -77,7 +77,7 @@ const About = () => {
         <Grid
           container
           justifyContent={{ xs: "center", md: "space-between" }}
-          width={{ xs: "100%", md: "50%" }}
+          width={{ xs: "100%", md: "70%" }}
           sx={{
             padding: "2rem",
             display: "flex",
