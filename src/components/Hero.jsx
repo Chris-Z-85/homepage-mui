@@ -6,13 +6,22 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Hero = () => {
   return (
-    <Grid container justifyContent="center" sx={{ height: "100vh" }} id="home">
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      sx={{ height: "80vh" }}
+      marginBottom="200px"
+      id="home"
+    >
       <Grid item>
         <Grid
           container
-          justifyContent="space-between"
+          spacing={10}
+          rowSpacing={15}
+          justifyContent={{ xs: "space-evenly", md: "space-evenly" }}
           alignItems="center"
-          sx={{ width: "70vw", height: "80vh" }}
+          flexDirection={{ xs: "column-reverse", md: "row" }}
         >
           <Grid item>
             <Typography
@@ -37,7 +46,11 @@ const Hero = () => {
             <Typography variant="h4" component="div" sx={{ mb: 5 }}>
               I build websites.
             </Typography>
-            <Stack spacing={2} direction="row">
+            <Stack
+              spacing={2}
+              direction="row"
+              justifyContent={{ xs: "center", md: "flex-start" }}
+            >
               <Link href="#about" underline="none" color="inherit">
                 <Button variant="outlined" sx={{ width: "150px" }}>
                   About me <ArrowForwardIosIcon fontSize="1rem" />
@@ -50,7 +63,7 @@ const Hero = () => {
               </Link>
             </Stack>
           </Grid>
-          <Grid item xs={6} md={4}>
+          <Grid item>
             <img src={Chris} alt="Chris Z." style={{ height: "400px" }} />
           </Grid>
         </Grid>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, Card } from "@mui/material";
+import { Grid, Typography, Card } from "@mui/material";
 import { Icon } from "@iconify/react";
 import Heading from "./Heading";
 import { deepPurple } from "@mui/material/colors/";
@@ -39,7 +39,14 @@ const Skills = () => {
     { name: "MongoDB", icon: "teenyicons:mongodb-outline" },
   ];
   return (
-    <Container sx={{ width: "50%" }} id="skills">
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      marginBottom="200px"
+      id="skills"
+    >
       <Heading title="Skills" subtitle="My powers" />
       <Typography
         textAlign="center"
@@ -47,7 +54,12 @@ const Skills = () => {
       >
         The tools and technologies I use:
       </Typography>
-      <Grid container spacing={3}>
+      <Grid
+        container
+        spacing={3}
+        width={{ xs: "100%", md: "40%" }}
+        justifyContent="center"
+      >
         {stack.map((item, index) => (
           <Grid item md={3} key={index}>
             <Card
@@ -92,11 +104,10 @@ const Skills = () => {
       </Typography>
       <Grid
         container
-        rowSpacing={2}
-        columnSpacing={{ md: 1 }}
-        direction="row"
-        justifyContent="space-evenly"
+        spacing={2}
+        justifyContent="center"
         alignItems="center"
+        width={{ xs: "100%", md: "40%" }}
       >
         {learning.map((item, index) => (
           <Grid item md={3} key={index}>
@@ -125,7 +136,7 @@ const Skills = () => {
           </Grid>
         ))}
       </Grid>
-    </Container>
+    </Grid>
   );
 };
 

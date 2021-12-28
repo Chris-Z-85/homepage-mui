@@ -8,9 +8,10 @@ const Heading = ({ title, subtitle }) => {
     display: flex;
     justify-content: center;
     position: relative;
+    margin-bottom: 2rem;
   `;
 
-  const Title = styled.h2`
+  const Title = styled.div`
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
     color: ${grey[800]};
@@ -19,10 +20,10 @@ const Heading = ({ title, subtitle }) => {
     line-height: 1.2;
   `;
 
-  const Subtitle = styled.h3`
+  const Subtitle = styled.div`
     color: ${deepPurple[500]};
     position: absolute;
-    bottom: 3rem;
+    bottom: -0.5rem;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 1000;

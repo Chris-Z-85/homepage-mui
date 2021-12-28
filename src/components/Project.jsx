@@ -1,15 +1,22 @@
 import React from "react";
-import { Container, Box, Stack, Button, Typography, Card } from "@mui/material";
+import { Grid, Box, Stack, Button, Typography } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 import { grey } from "@mui/material/colors/";
 
 const Project = ({ props }) => {
   return (
-    <Container
-      sx={{ display: "flex", gap: "3rem", alignItems: "center" }}
+    <Grid
+      container
+      flexDirection={{ xs: "column", md: "row" }}
+      width="100%"
+      gap="3rem"
+      alignItems="center"
+      justifyContent="center"
       style={props.id % 2 === 0 ? { flexDirection: "row-reverse" } : {}}
     >
-      <Card
+      <Grid
+        item
+        width={{ xs: "100%", md: "50%" }}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -54,15 +61,16 @@ const Project = ({ props }) => {
             </Button>
           )}
         </Stack>
-      </Card>
+      </Grid>
       <a href={props.demo} target="__blank">
-        <Box
+        <Grid
+          item
+          width={{ xs: "90vw", md: "35vw" }}
           sx={{
             border: "3px solid grey",
             borderRadius: "10px",
             display: "flex",
             flexDirection: "column",
-            width: "35vw",
             overflow: "hidden",
           }}
         >
@@ -85,10 +93,10 @@ const Project = ({ props }) => {
               }}
             ></Box>
           </Box>
-          <img src={props.image} alt={props.title} style={{ width: "100%" }} />
-        </Box>
+          <img src={props.image} alt={props.title} />
+        </Grid>
       </a>
-    </Container>
+    </Grid>
   );
 };
 

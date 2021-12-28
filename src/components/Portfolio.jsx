@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Typography } from "@mui/material";
+import { Card, Container, Box, Typography } from "@mui/material";
 import Project from "./Project";
 import gpt3 from "../../src/images/projects/gpt-3.png";
 import polskieni from "../../src/images/projects/polskieni.png";
@@ -45,7 +45,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <Container id="portfolio">
+    <Container sx={{ marginBottom: "200px" }} id="portfolio">
       <Heading title="Portfolio" subtitle="My work" />
       <Typography
         textAlign="center"
@@ -61,7 +61,9 @@ const Portfolio = () => {
         }}
       >
         {projects.map((project, index) => (
-          <Project props={project} key={index} />
+          <Card>
+            <Project props={project} key={index} />
+          </Card>
         ))}
       </Box>
       <Typography

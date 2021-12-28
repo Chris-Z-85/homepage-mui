@@ -17,7 +17,7 @@ import Heading from "./Heading";
 import Resume from "../Chris_Zbrojkiewicz_Resume.pdf";
 import styled from "styled-components";
 import chris_z from "../../src/images/chris_z.svg";
-import { grey, deepPurple } from "@mui/material/colors/";
+import { grey } from "@mui/material/colors/";
 
 const MiniCv = styled.div`
   height: 200px;
@@ -43,6 +43,7 @@ const About = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
+      marginBottom="200px"
       id="about"
     >
       <Heading title="About" subtitle="Myself" />
@@ -75,12 +76,13 @@ const About = () => {
         </Card>
         <Grid
           container
-          justifyContent="space-between"
+          justifyContent={{ xs: "center", md: "space-between" }}
+          width={{ xs: "100%", md: "50%" }}
           sx={{
-            width: "50%",
             padding: "2rem",
             display: "flex",
             alignItems: "flex-end",
+            gap: "50px",
           }}
         >
           <Box
