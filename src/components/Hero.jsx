@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Typography, Button, Stack, Link } from "@mui/material";
 import Chris from "../images/chris_z-circle.svg";
 
+import Typewriter from "typewriter-effect";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Hero = () => {
@@ -42,8 +43,18 @@ const Hero = () => {
             >
               I'm Frontend Developer
             </Typography>
-            <Typography variant="h4" component="div" sx={{ mb: 5 }}>
-              I build websites.
+            <Typography
+              variant="h4"
+              component="div"
+              sx={{ mb: 5, fontFamily: "Monospace" }}
+            >
+              <Typewriter
+                options={{
+                  strings: ["I build websites.", "Check my projects!"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </Typography>
             <Stack
               spacing={2}
