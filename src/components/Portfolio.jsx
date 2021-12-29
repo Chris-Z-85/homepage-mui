@@ -63,7 +63,7 @@ const Portfolio = () => {
         }}
       >
         {projects.map((project, index) => (
-          <Card sx={{ padding: "20px", width: "80vw" }}>
+          <Card sx={{ padding: "20px", width: "80vw" }} key={index}>
             <Project props={project} key={index} />
           </Card>
         ))}

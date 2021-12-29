@@ -27,8 +27,10 @@ const Project = ({ props }) => {
         <Typography variant="h5">{props.subheading}</Typography>
         <Typography>{props.description}</Typography>
         <ul>
-          {props.stack.map((item) => (
-            <li style={{ listStyle: "square inside" }}>{item}</li>
+          {props.stack.map((item, index) => (
+            <li style={{ listStyle: "square inside" }} key={index}>
+              {item}
+            </li>
           ))}
         </ul>
         <Stack
