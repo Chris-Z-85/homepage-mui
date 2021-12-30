@@ -18,4 +18,4 @@ Deployed: :arrow_right: [Here](https://chris-z.netlify.app/) :arrow_left:
 
 ## Preview
 
-![Project Image](https://github.com/Chris-Z-85/fretboard-master.github.io/blob/master/homepage.png?raw=true)
+![Project Image](https://github.com/Chris-Z-85/homepage-mui/blob/main/homepage.png?raw=true)
