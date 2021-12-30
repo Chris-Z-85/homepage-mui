@@ -1,17 +1,19 @@
 import React from "react";
 import { Grid, Typography, Button, Stack, Link } from "@mui/material";
 import Chris from "../images/chris_z-circle.svg";
-
 import Typewriter from "typewriter-effect";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ScrollDown from "./ScrollDown";
 
 const Hero = () => {
   return (
     <Grid
       container
+      direction="column"
       justifyContent="center"
       alignItems="center"
       marginBottom="200px"
+      height="100vh"
       id="home"
     >
       <Grid item>
@@ -78,6 +80,7 @@ const Hero = () => {
           </Grid>
         </Grid>
       </Grid>
+      <ScrollDown />
     </Grid>
   );
 };

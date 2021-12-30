@@ -15,6 +15,8 @@ export const ColorModeContextProvider = ({ children }) => {
     []
   );
 
+  const bg = "linear-gradient(120deg, #232a2d, #000 60%)";
+
   const theme = React.useMemo(
     () =>
       createTheme({
@@ -22,6 +24,10 @@ export const ColorModeContextProvider = ({ children }) => {
           mode,
           primary: {
             main: `${deepPurple[500]}`,
+            mainGradient: "linear-gradient(to right, tomato, cyan)",
+          },
+          background: {
+            default: "linear-gradient(120deg, #232a2d, #000 60%);",
           },
         },
         typography: {

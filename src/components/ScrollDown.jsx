@@ -1,22 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { Box } from "@mui/material";
+import styled from "styled-components";
 import Arrow from "./Arrow";
 
-const ScrollToTop = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const ArrowAnimation = styled.div`
+  position: fixed;
+  left: calc(50% - 25px);
+  bottom: 3rem;
+  animation: action 1s infinite alternate;
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+`;
+
+const ScrollDown = () => {
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 10) {
-        setIsVisible(true);
-      } else {
         setIsVisible(false);
+      } else {
+        setIsVisible(true);
       }
     };
 
@@ -30,17 +41,14 @@ const ScrollToTop = () => {
       sx={{
         position: "fixed",
         bottom: 20,
-        right: 20,
-        cursor: "pointer",
-        transform: "rotate(180deg)",
       }}
     >
       {isVisible && (
-        <div onClick={scrollToTop}>
+        <ArrowAnimation>
           <Arrow />
-        </div>
+        </ArrowAnimation>
       )}
     </Box>
   );
 };
-export default ScrollToTop;
+export default ScrollDown;

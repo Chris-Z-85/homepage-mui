@@ -45,7 +45,16 @@ const Portfolio = () => {
   ];
 
   return (
-    <Container sx={{ marginBottom: "200px" }} id="portfolio">
+    <Container
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+        alignItems: "center",
+        marginTop: "2rem",
+      }}
+      id="portfolio"
+    >
       <Heading title="Portfolio" subtitle="My work" />
       <Typography
         textAlign="center"

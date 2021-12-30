@@ -8,6 +8,7 @@ const Heading = ({ title, subtitle }) => {
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 60px;
     margin-bottom: 2rem;
   `;
 
