@@ -5,6 +5,7 @@ import gpt3 from "../../src/images/projects/gpt-3.png";
 import polskieni from "../../src/images/projects/polskieni.png";
 import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
 import homepage from "../../src/images/projects/homepage.png";
+import thechatapp from "../../src/images/projects/thechatapp.png";
 import Heading from "./Heading";
 import { deepPurple } from "@mui/material/colors/";
 
@@ -33,6 +34,22 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      title: "The Chat App",
+      subheading: "Firebase Chat Application",
+      description:
+        "Chat Application created with React and Firebase including Google and Facebook login authentication.",
+      stack: [
+        "React (Routing, Context API)",
+        "Firebase (Social Login)",
+        "Chat Engine (https://chatengine.io/)",
+        "REST API",
+      ],
+      github: "https://github.com/Chris-Z-85/the-chat-app",
+      demo: "https://the-chat-app.netlify.app",
+      image: thechatapp,
+    },
+    {
+      id: 4,
       title: "Polish Northern Ireland Community",
       subheading: "Polish Primary School in Northern Ireland",
       description:
@@ -43,7 +60,7 @@ const Portfolio = () => {
       image: polskieni,
     },
     {
-      id: 4,
+      id: 5,
       title: "Fretboard Master",
       subheading: "Fretboard tool for guitarists",
       description:
