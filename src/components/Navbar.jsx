@@ -48,7 +48,10 @@ const Navbar = () => {
   return (
     <>
       {isVisible && (
-        <AppBar position="static" sx={{ position: "sticky", top: "0" }}>
+        <AppBar
+          position="static"
+          sx={{ position: "sticky", top: "0", zIndex: "100" }}
+        >
           <Container maxWidth="xl">
             <Toolbar disableGutters>
               <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
