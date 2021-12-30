@@ -4,6 +4,7 @@ import Project from "./Project";
 import gpt3 from "../../src/images/projects/gpt-3.png";
 import polskieni from "../../src/images/projects/polskieni.png";
 import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
+import homepage from "../../src/images/projects/homepage.png";
 import Heading from "./Heading";
 import { deepPurple } from "@mui/material/colors/";
 
@@ -22,6 +23,16 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: "Homepage",
+      subheading: "My personal homepage with Portfolio",
+      description: "React application designed and built by myself.",
+      stack: ["React", "Material UI", "Formik & Yup"],
+      github: "https://github.com/Chris-Z-85/homepage-mui",
+      demo: "https://chris-z.netlify.app/",
+      image: homepage,
+    },
+    {
+      id: 3,
       title: "Polish Northern Ireland Community",
       subheading: "Polish Primary School in Northern Ireland",
       description:
@@ -32,7 +43,7 @@ const Portfolio = () => {
       image: polskieni,
     },
     {
-      id: 3,
+      id: 4,
       title: "Fretboard Master",
       subheading: "Fretboard tool for guitarists",
       description:
