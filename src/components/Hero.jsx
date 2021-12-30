@@ -11,36 +11,45 @@ const Hero = () => {
       container
       direction="column"
       justifyContent="center"
-      alignItems="center"
-      marginBottom="200px"
       height="100vh"
       id="home"
     >
-      <Grid item>
+      <Grid item sx={{ height: { xs: "85vh", md: "70vh" } }}>
         <Grid
           container
-          spacing={10}
-          rowSpacing={15}
+          spacing={5}
           justifyContent={{ xs: "space-evenly", md: "space-evenly" }}
           alignItems="center"
           flexDirection={{ xs: "column-reverse", md: "row" }}
         >
           <Grid item>
             <Typography
-              variant="h4"
               component="div"
-              sx={{ mb: 5 }}
+              sx={{
+                mb: { xs: 2, md: 5 },
+                fontSize: { xs: "1.5rem", md: "2rem" },
+              }}
               color="primary"
             >
               Hey, my name is
             </Typography>
-            <Typography variant="h2" component="div" sx={{ mb: 5 }}>
+            <Typography
+              variant="h2"
+              component="div"
+              sx={{
+                mb: { xs: 2, md: 5 },
+                fontSize: { xs: "3rem", md: "4rem" },
+              }}
+            >
               Chris Z.
             </Typography>
             <Typography
               variant="h3"
               component="div"
-              sx={{ mb: 5 }}
+              sx={{
+                mb: { xs: 2, md: 5 },
+                fontSize: { xs: "2rem", md: "3rem" },
+              }}
               color="primary"
             >
               I'm Frontend Developer
@@ -48,7 +57,11 @@ const Hero = () => {
             <Typography
               variant="h4"
               component="div"
-              sx={{ mb: 5, fontFamily: "Monospace" }}
+              sx={{
+                mb: { xs: 2, md: 5 },
+                fontSize: { xs: "1.5rem", md: "2rem" },
+                fontFamily: "Monospace",
+              }}
             >
               <Typewriter
                 options={{
@@ -75,8 +88,8 @@ const Hero = () => {
               </Link>
             </Stack>
           </Grid>
-          <Grid item>
-            <img src={Chris} alt="Chris Z." style={{ height: "400px" }} />
+          <Grid item sx={{ height: { xs: "300px", md: "500px" } }}>
+            <img src={Chris} alt="Chris Z." style={{ height: "100%" }} />
           </Grid>
         </Grid>
       </Grid>

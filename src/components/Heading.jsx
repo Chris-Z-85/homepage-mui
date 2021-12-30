@@ -19,7 +19,7 @@ const Heading = ({ title, subtitle }) => {
           fontFamily: "Rubik",
           textTransform: "uppercase",
           color: `${grey[800]}`,
-          fontSize: { xs: "3rem", md: "5rem" },
+          fontSize: { xs: "3.5rem", md: "5rem" },
           fontWeight: "1000",
           lineHeight: "1.2",
         }}
@@ -30,9 +30,9 @@ const Heading = ({ title, subtitle }) => {
         sx={{
           color: `${deepPurple[500]}`,
           position: "absolute",
-          bottom: "-0.1rem",
+          bottom: "-0.5rem",
           textTransform: "uppercase",
-          fontSize: { xs: "1rem", md: "2rem" },
+          fontSize: { xs: "1.5rem", md: "2rem" },
           fontWeight: "1000",
           margin: "0",
         }}

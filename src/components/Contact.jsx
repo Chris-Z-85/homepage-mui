@@ -55,14 +55,16 @@ const Contact = () => {
       id="contact"
     >
       <Heading title="Contact" subtitle="Get in touch" />
-      <Typography sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
+      <Typography
+        sx={{ fontSize: "1.25rem", marginBottom: "2rem", textAlign: "center" }}
+      >
         Got a question or want to work together?
       </Typography>
       <Typography
         sx={{ fontSize: "1.25rem", marginBottom: "2rem", textAlign: "center" }}
       >
-        Fill in your info in the form below and I look forward to hearing from
-        you!
+        Fill in your info in the form below and I&nbsp;look forward to hearing
+        from you!
       </Typography>
       <Typography>{formMsg}</Typography>
       <Formik

@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Box, Stack, Button, Typography } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
-import { grey } from "@mui/material/colors/";
+import { deepPurple, grey } from "@mui/material/colors/";
 
 const Project = ({ props }) => {
   return (
@@ -23,14 +23,27 @@ const Project = ({ props }) => {
           padding: "1rem",
         }}
       >
-        <Typography variant="h4">{props.title}</Typography>
-        <Typography variant="h5">{props.subheading}</Typography>
-        <Typography>{props.description}</Typography>
+        <Typography
+          sx={{
+            color: `${deepPurple[500]}`,
+            fontSize: { xs: "1.5rem", md: "2rem" },
+          }}
+        >
+          {props.title}
+        </Typography>
+        <Typography sx={{ fontSize: { xs: "1.25rem", md: "1.5rem" } }}>
+          {props.subheading}
+        </Typography>
+        <Typography sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
+          {props.description}
+        </Typography>
         <ul>
           {props.stack.map((item, index) => (
-            <li style={{ listStyle: "square inside" }} key={index}>
-              {item}
-            </li>
+            <Typography sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
+              <li style={{ listStyle: "square inside" }} key={index}>
+                {item}
+              </li>
+            </Typography>
           ))}
         </ul>
         <Stack

@@ -6,15 +6,15 @@ import Arrow from "./Arrow";
 const ArrowAnimation = styled.div`
   position: fixed;
   left: calc(50% - 25px);
-  bottom: 3rem;
-  animation: action 1s infinite alternate;
+  bottom: 4rem;
+  animation: action 1.5s infinite alternate;
 
   @keyframes action {
     0% {
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-15px);
+      transform: translateY(-2rem);
     }
   }
 `;

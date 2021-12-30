@@ -60,7 +60,7 @@ const Portfolio = () => {
         textAlign="center"
         sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
       >
-        Check out some of the stuff, that I have built.
+        Check out some of the stuff, that&nbsp;I&nbsp;have built.
       </Typography>
       <Box
         sx={{

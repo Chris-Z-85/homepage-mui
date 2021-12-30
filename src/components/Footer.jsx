@@ -34,7 +34,13 @@ const Footer = () => {
           <LinkedInIcon />
         </IconButton>
       </Stack>
-      <Typography sx={{ padding: "1rem" }}>
+      <Typography
+        sx={{
+          padding: "1rem",
+          textAlign: "center",
+          fontSize: { xs: "0.9rem", md: "1.10rem" },
+        }}
+      >
         © {currentYear}| Designed & coded by Chris Zbrojkiewicz
       </Typography>
     </Container>

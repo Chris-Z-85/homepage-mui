@@ -76,11 +76,12 @@ const About = () => {
         </Card>
         <Grid
           item
+          flexDirection={{ xs: "column", md: "row" }}
           justifyContent={{ xs: "center", md: "space-between" }}
+          alignItems={{ xs: "center", md: "flex-end" }}
           sx={{
             padding: "2rem",
             display: "flex",
-            alignItems: "flex-end",
             gap: "50px",
           }}
         >
