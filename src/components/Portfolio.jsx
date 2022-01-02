@@ -6,6 +6,7 @@ import polskieni from "../../src/images/projects/polskieni.png";
 import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
 import homepage from "../../src/images/projects/homepage.png";
 import thechatapp from "../../src/images/projects/thechatapp.png";
+import themoviesapp from "../../src/images/projects/themoviesapp.png";
 import Heading from "./Heading";
 import { deepPurple } from "@mui/material/colors/";
 
@@ -13,6 +14,17 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      title: "The Movies App",
+      subheading: "Fully responsive movies application",
+      description:
+        "Website with movies built in React using The Movie Database API (TMDB).",
+      stack: ["React", "SASS", "API (www.themoviedb.org)", "AXIOS"],
+      github: "https://github.com/Chris-Z-85/movies-app",
+      demo: "https://themoviesapp.netlify.app",
+      image: themoviesapp,
+    },
+    {
+      id: 2,
       title: "GPT-3 OpenAI Website",
       subheading: "Figma project turned into reality!",
       description:
@@ -23,7 +35,7 @@ const Portfolio = () => {
       image: gpt3,
     },
     {
-      id: 2,
+      id: 3,
       title: "Homepage",
       subheading: "My personal homepage with Portfolio",
       description: "React application designed and built by myself.",
@@ -33,7 +45,7 @@ const Portfolio = () => {
       image: homepage,
     },
     {
-      id: 3,
+      id: 4,
       title: "The Chat App",
       subheading: "Firebase Chat Application",
       description:
@@ -49,7 +61,7 @@ const Portfolio = () => {
       image: thechatapp,
     },
     {
-      id: 4,
+      id: 5,
       title: "Polish Northern Ireland Community",
       subheading: "Polish Primary School in Northern Ireland",
       description:
@@ -60,7 +72,7 @@ const Portfolio = () => {
       image: polskieni,
     },
     {
-      id: 5,
+      id: 6,
       title: "Fretboard Master",
       subheading: "Fretboard tool for guitarists",
       description:
