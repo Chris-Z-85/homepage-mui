@@ -12,6 +12,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Link,
 } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -61,33 +62,164 @@ const About = () => {
         <Card
           sx={{
             padding: "2rem",
+            width: "80vw",
           }}
         >
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            My name is <b>Chris Z.</b> and I am a passionate
+            My name is <b>Chris</b> and I am a passionate
             <b> Frontend Developer </b>
             from Poland, based in the United Kingdom.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            I have working proficiency in <b>HTML, CSS, JavaScript</b> and
-            <b> React</b>.
+            I first became familiar with <b>HTML</b>, <b>CSS</b> and{" "}
+            <b>JavaScript</b> in late '90 when I got my dial-up modem internet
+            connection and started to explore the web. This was the time when I
+            have developed my first websites.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            I am comfortable working with the <b>command line </b>
-            and using <b>Git</b> version control.
+            After high school, I decided to continue my education in a college.
+            In 2008 I graduated with a <b>Bachelor's degree</b> in{" "}
+            <b>English and IT</b> and continued by earning a{" "}
+            <b>Master's degree</b> in 2010.
           </Typography>
-          <Typography sx={{ fontSize: "1.25rem", marginBottom: "3rem" }}>
-            My current development environment consists of
-            <b> macOS, Visual Studio Code</b> and <b>GitHub</b>.
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            After graduation, I started a job as an <b>IT instructor</b> and a
+            <b> Microsoft Academy Manager</b>, where I specialised in teaching
+            <b> MS Office suite</b> (Word, Excel etc.) at{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.learndirect.com/"
+            >
+              Learndirect
+            </Link>{" "}
+            - an education centre for adults in London.
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            Then I was working for{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.statestreet.com/"
+            >
+              State Street
+            </Link>
+            , an American Bank for investment funds, where I was processing
+            transactions with accounting applications, working with spreadsheets
+            and <b>automating processes with macros</b>.
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            Later, as a self-employed <b>IT instructor</b>, I delivered many
+            training for accountants, corporate employees for educational
+            institutions and international companies, e.g.{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.heineken.co.uk/"
+            >
+              Heineken
+            </Link>
+            .
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            When I was employed by{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.comarch.com/"
+            >
+              Comarch
+            </Link>{" "}
+            I prepared and delivered training of their{" "}
+            <b>Loyalty Management Software</b>
+            for{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.etihad.com/en-gb/"
+            >
+              Etihad Airways
+            </Link>{" "}
+            employees in Abu Dhabi, UAE.
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            During my career, I have also gained extensive experience in
+            <b> customer service</b> while working for{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.cathaypacific.com/"
+            >
+              Cathay Pacific Airlines
+            </Link>
+            ,{" "}
+            <Link color="inherit" target="_blank" href="http://booking.com/">
+              Booking.com
+            </Link>{" "}
+            and{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.boschservicesolutions.com/"
+            >
+              Bosch
+            </Link>{" "}
+            - where I worked as <b>Technical Support</b> of the telematics
+            online platform{" "}
+            <Link color="inherit" target="_blank" href="https://rio.cloud/en/">
+              RIO
+            </Link>
+            .
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            When{" "}
+            <Link color="inherit" target="_blank" href="https://rio.cloud/en/">
+              RIO
+            </Link>
+            's cooperation with{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.boschservicesolutions.com/"
+            >
+              Bosch
+            </Link>{" "}
+            has come to an end, I decided to begin my journey into web
+            development. I started to brush up on my web skills and began to
+            learn Javascript. In January 2021 I started a three-month intensive{" "}
+            <b>Full Stack Web Development </b>program at{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.spiced-academy.com/en"
+            >
+              SPICED Academy
+            </Link>{" "}
+            in Berlin. I was able to complete it on time, just before a lockdown
+            came.
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            During a 'stay at home' time I continued studying web development by{" "}
+            <b>
+              taking courses on learning platforms, making projects and taking
+              private lessons
+            </b>
+            . In autumn 2021 I moved with my family to Northern Ireland. Here I
+            focused on practical learning by <b>building various projects</b>{" "}
+            for my <b>portfolio</b>.
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            I am currently searching for an opportunity as <b>Web Developer</b>.
           </Typography>
           <Typography
             sx={{
               fontSize: "1.25rem",
+              marginTop: "1rem",
               marginBottom: "1rem",
               textAlign: "center",
             }}
           >
-            Check out my work. Get in touch. Let's work together !
+            <b>Check out my work. Get in touch. Let's work together !</b>
           </Typography>
           <Typography
             sx={{
