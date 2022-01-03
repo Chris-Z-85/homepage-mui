@@ -7,16 +7,26 @@ import {
   Stack,
   IconButton,
   Card,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
 } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import SchoolIcon from "@mui/icons-material/School";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import Heading from "./Heading";
-import Resume from "../Chris_Zbrojkiewicz_Resume.pdf";
+import CV from "../Chris_Zbrojkiewicz_Resume.pdf";
 import styled from "styled-components";
 import chris_z from "../../src/images/chris_z.svg";
+import spiced from "../../src/images/certificates/Full Stack Web Development.png";
+import udemy from "../../src/images/certificates/Complete Web Developer.png";
+import freecodecamp from "../../src/images/certificates/Responsive Web Design.png";
 import { grey } from "@mui/material/colors/";
 
 const MiniCv = styled.div`
@@ -70,9 +80,75 @@ const About = () => {
             My current development environment consists of
             <b> macOS, Visual Studio Code</b> and <b>GitHub</b>.
           </Typography>
-          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+          <Typography
+            sx={{
+              fontSize: "1.25rem",
+              marginBottom: "1rem",
+              textAlign: "center",
+            }}
+          >
             Check out my work. Get in touch. Let's work together !
           </Typography>
+          <Typography
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "Rubik",
+            }}
+          >
+            Education
+          </Typography>
+          <List>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <SchoolIcon />
+                </ListItemIcon>
+                <ListItemText primary="BA: Information Technology" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <SchoolIcon />
+                </ListItemIcon>
+                <ListItemText primary="MA: English Language and Literature" />
+              </ListItemButton>
+            </ListItem>
+          </List>
+          <Typography
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "Rubik",
+            }}
+          >
+            Certificates
+          </Typography>
+          <List>
+            <ListItem disablePadding>
+              <ListItemButton component="a" href={spiced}>
+                <ListItemIcon>
+                  <EmojiEventsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Full Stack Web Development @ SPICED Academy, Berlin" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton component="a" href={udemy}>
+                <ListItemIcon>
+                  <EmojiEventsIcon />
+                </ListItemIcon>
+                <ListItemText primary="The Complete Web Developer: Zero to Mastery @ Udemy" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton component="a" href={freecodecamp}>
+                <ListItemIcon>
+                  <EmojiEventsIcon />
+                </ListItemIcon>
+                <ListItemText primary="Responsive Web Design @ freeCodeCamp" />
+              </ListItemButton>
+            </ListItem>
+          </List>
         </Card>
         <Grid
           item
@@ -122,12 +198,17 @@ const About = () => {
               </defs>
             </svg>
             <Stack spacing={2} direction="row">
-              <IconButton color="primary" href="mailto:chris.z@aol.com">
+              <IconButton
+                color="primary"
+                href="mailto:chris.z@aol.com"
+                title="Email"
+              >
                 <EmailIcon sx={{ fontSize: 45 }} />
               </IconButton>
               <IconButton
                 color="primary"
                 href="https://github.com/Chris-Z-85"
+                title="GitHub"
                 target="_blank"
               >
                 <GitHubIcon sx={{ fontSize: 45 }} />
@@ -135,6 +216,7 @@ const About = () => {
               <IconButton
                 color="primary"
                 href="https://www.linkedin.com/in/chrisZ85/"
+                title="LinkedIn"
                 target="_blank"
               >
                 <LinkedInIcon sx={{ fontSize: 45 }} />
@@ -147,8 +229,8 @@ const About = () => {
             <Line />
             <Line />
             <Line />
-            <Button variant="contained" href={Resume} target="_blank">
-              Resume&nbsp;
+            <Button variant="contained" href={CV} target="_blank" title="CV">
+              My CV&nbsp;
               <CloudDownloadIcon fontSize="1rem" />
             </Button>
           </MiniCv>

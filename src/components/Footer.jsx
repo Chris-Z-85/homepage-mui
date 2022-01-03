@@ -16,12 +16,13 @@ const Footer = () => {
       }}
     >
       <Stack spacing={2} direction="row">
-        <IconButton color="primary" href="mailto:chris.z@aol.com">
+        <IconButton color="primary" href="mailto:chris.z@aol.com" title="Email">
           <EmailIcon />
         </IconButton>
         <IconButton
           color="primary"
           href="https://github.com/Chris-Z-85"
+          title="GitHub"
           target="_blank"
         >
           <GitHubIcon />
@@ -29,6 +30,7 @@ const Footer = () => {
         <IconButton
           color="primary"
           href="https://www.linkedin.com/in/chrisZ85/"
+          title="LinkedIn"
           target="_blank"
         >
           <LinkedInIcon />
