@@ -22,7 +22,7 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import SchoolIcon from "@mui/icons-material/School";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import Heading from "./Heading";
-import CV from "../Chris_Zbrojkiewicz_Resume.pdf";
+import CV from "../Chris_Zbrojkiewicz_CV.pdf";
 import styled from "styled-components";
 import chris_z from "../../src/images/chris_z.svg";
 import spiced from "../../src/images/certificates/Full Stack Web Development.png";
