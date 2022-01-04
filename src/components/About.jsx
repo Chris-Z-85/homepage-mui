@@ -23,6 +23,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import Heading from "./Heading";
 import CV from "../Chris_Zbrojkiewicz_CV.pdf";
+import refLetter from "../Spiced_Reference_Letter_Chris_Zbrojkiewicz.pdf";
 import styled from "styled-components";
 import chris_z from "../../src/images/chris_z.svg";
 import spiced from "../../src/images/certificates/Full Stack Web Development.png";
@@ -193,8 +194,11 @@ const About = () => {
             >
               SPICED Academy
             </Link>{" "}
-            in Berlin. I was able to complete it on time, just before a lockdown
-            came.
+            (see{" "}
+            <Link color="inherit" target="_blank" href={refLetter}>
+              Letter of Reference)
+            </Link>
+            . I was able to complete it on time, just before a lockdown came.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
             During a 'stay at home' time I continued studying web development by{" "}
