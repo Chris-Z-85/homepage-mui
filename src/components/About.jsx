@@ -79,11 +79,10 @@ const About = () => {
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
             After high school, I decided to continue my education in a college.
             In 2008 I graduated with a <b>Bachelor's degree</b> in{" "}
-            <b>English and IT</b> and continued by earning a{" "}
-            <b>Master's degree</b> in 2010.
+            <b>English and IT</b> and with a <b>Master's degree</b> in 2010.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            After graduation, I started a job as an <b>IT instructor</b> and a
+            In 2011 I started a job as an <b>IT instructor</b> and a
             <b> Microsoft Academy Manager</b>, where I specialised in teaching
             <b> MS Office suite</b> (Word, Excel etc.) at{" "}
             <Link
@@ -96,7 +95,20 @@ const About = () => {
             - an education centre for adults in London.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            Then I was working for{" "}
+            Later, as a self-employed <b>IT instructor</b> (2012 - 2013), I
+            delivered many training for accountants, corporate employees for
+            educational institutions and international companies, e.g.{" "}
+            <Link
+              color="inherit"
+              target="_blank"
+              href="https://www.heineken.co.uk/"
+            >
+              Heineken
+            </Link>
+            .
+          </Typography>
+          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
+            Then, in 2014 I started working for{" "}
             <Link
               color="inherit"
               target="_blank"
@@ -109,19 +121,6 @@ const About = () => {
             and <b>automating processes with macros</b>.
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            Later, as a self-employed <b>IT instructor</b>, I delivered many
-            training for accountants, corporate employees for educational
-            institutions and international companies, e.g.{" "}
-            <Link
-              color="inherit"
-              target="_blank"
-              href="https://www.heineken.co.uk/"
-            >
-              Heineken
-            </Link>
-            .
-          </Typography>
-          <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
             When I was employed by{" "}
             <Link
               color="inherit"
@@ -130,9 +129,8 @@ const About = () => {
             >
               Comarch
             </Link>{" "}
-            I prepared and delivered training of their{" "}
-            <b>Loyalty Management Software</b>
-            for{" "}
+            in 2016, I prepared and delivered training of their{" "}
+            <b>Loyalty Management Software</b> for{" "}
             <Link
               color="inherit"
               target="_blank"
@@ -144,7 +142,7 @@ const About = () => {
           </Typography>
           <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
             During my career, I have also gained extensive experience in
-            <b> customer service</b> while working for{" "}
+            <b> customer service</b> (2017 - 2019) while working for{" "}
             <Link
               color="inherit"
               target="_blank"
@@ -186,7 +184,7 @@ const About = () => {
             </Link>{" "}
             has come to an end, I decided to begin my journey into web
             development. I started to brush up on my web skills and began to
-            learn Javascript. In January 2021 I started a three-month intensive{" "}
+            learn Javascript. In January 2020 I started a three-month intensive{" "}
             <b>Full Stack Web Development </b>program at{" "}
             <Link
               color="inherit"
