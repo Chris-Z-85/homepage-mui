@@ -1,88 +1,19 @@
-import React from "react";
-import { Card, Container, Box, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Card, Container, Box, Typography, Button, Stack } from "@mui/material";
 import Project from "./Project";
-import gpt3 from "../../src/images/projects/gpt-3.png";
-import polskieni from "../../src/images/projects/polskieni.png";
-import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
-import homepage from "../../src/images/projects/homepage.png";
-import thechatapp from "../../src/images/projects/thechatapp.png";
-import themoviesapp from "../../src/images/projects/themoviesapp.png";
 import Heading from "./Heading";
 import { deepPurple } from "@mui/material/colors/";
+import projects from "./projects";
 
 const Portfolio = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "The Movies App",
-      subheading: "Fully responsive movies application",
-      description:
-        "Website with movies built in React using The Movie Database API (TMDB).",
-      stack: ["React", "SASS", "API (www.themoviedb.org)", "AXIOS"],
-      github: "https://github.com/Chris-Z-85/movies-app",
-      demo: "https://themoviesapp.netlify.app",
-      image: themoviesapp,
-    },
-    {
-      id: 2,
-      title: "GPT-3 OpenAI Website",
-      subheading: "Figma project turned into reality!",
-      description:
-        "Fully functioning, modern and responsive React website based on a Figma design.",
-      stack: ["React", "CSS BEM Model", "React Icons"],
-      github: "https://github.com/Chris-Z-85/GTP3",
-      demo: "https://gtp3-open-ai.netlify.app/",
-      image: gpt3,
-    },
-    {
-      id: 3,
-      title: "Homepage",
-      subheading: "My personal homepage with Portfolio",
-      description: "React application designed and built by myself.",
-      stack: ["React", "Material UI", "Formik & Yup"],
-      github: "https://github.com/Chris-Z-85/homepage-mui",
-      demo: "https://chris-z.netlify.app/",
-      image: homepage,
-    },
-    {
-      id: 4,
-      title: "The Chat App",
-      subheading: "Firebase Chat Application",
-      description:
-        "Chat Application created with React and Firebase including Google and Facebook login authentication.",
-      stack: [
-        "React (Routing, Context API)",
-        "Firebase (Social Login)",
-        "Chat Engine (https://chatengine.io/)",
-        "REST API",
-      ],
-      github: "https://github.com/Chris-Z-85/the-chat-app",
-      demo: "https://the-chat-app.netlify.app",
-      image: thechatapp,
-    },
-    {
-      id: 5,
-      title: "Polish Northern Ireland Community",
-      subheading: "Polish Primary School in Northern Ireland",
-      description:
-        "Homepage of the Polish Primary School organized by the Polish Network in Northern Ireland.",
-      stack: ["React", "Contentful"],
-      github: "",
-      demo: "https://pss-craigavon.netlify.app/",
-      image: polskieni,
-    },
-    {
-      id: 6,
-      title: "Fretboard Master",
-      subheading: "Fretboard tool for guitarists",
-      description:
-        "A tool designed to help guitarists memorize fret note names. It features the guitar, bass or ukulele customizable fretboard with multiples tools like tuning adjustment and note display. The game mode enables users to practize fretboard navigation skills on 3 difficulty levels.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Chris-Z-85/fretboard-master.github.io",
-      demo: "https://chris-z-85.github.io/fretboard-master.github.io/",
-      image: fretboardmaster,
-    },
-  ];
+  const [projectsToDisplay, setProjectsToDisplay] = useState(projects);
+
+  const filterItem = (filter) => {
+    const filteredProjects = projects.filter((proj) => {
+      return proj.stack.includes(filter);
+    });
+    setProjectsToDisplay(filteredProjects);
+  };
 
   return (
     <Container
@@ -102,6 +33,13 @@ const Portfolio = () => {
       >
         Check out some of the stuff, that&nbsp;I&nbsp;have built.
       </Typography>
+      <Stack direction="row" spacing={2}>
+        <Button onClick={() => setProjectsToDisplay(projects)}>All</Button>
+        <Button onClick={() => filterItem("HTML")}>HTML</Button>
+        <Button onClick={() => filterItem("CSS")}>CSS</Button>
+        <Button onClick={() => filterItem("JavaScript")}>JavaScript</Button>
+        <Button onClick={() => filterItem("React")}>React</Button>
+      </Stack>
       <Box
         sx={{
           display: "flex",
@@ -111,7 +49,7 @@ const Portfolio = () => {
           gap: "3rem",
         }}
       >
-        {projects.map((project, index) => (
+        {projectsToDisplay.map((project, index) => (
           <Card sx={{ padding: "20px", width: "80vw" }} key={index}>
             <Project props={project} key={index} />
           </Card>

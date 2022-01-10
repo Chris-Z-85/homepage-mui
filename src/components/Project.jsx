@@ -11,7 +11,7 @@ const Project = ({ props }) => {
       gap="3rem"
       alignItems="center"
       justifyContent="center"
-      style={props.id % 2 === 0 ? { flexDirection: "row-reverse" } : {}}
+      sx={props.id % 2 === 0 ? { flexDirection: "row-reverse" } : {}}
     >
       <Grid
         item
