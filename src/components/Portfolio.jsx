@@ -33,7 +33,14 @@ const Portfolio = () => {
       >
         Check out some of the stuff, that&nbsp;I&nbsp;have built.
       </Typography>
-      <Stack direction="row" spacing={2}>
+      <Stack
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        direction="row"
+        flexWrap="wrap"
+        spacing={2}
+      >
         <Button onClick={() => setProjectsToDisplay(projects)}>All</Button>
         <Button onClick={() => filterItem("HTML")}>HTML</Button>
         <Button onClick={() => filterItem("CSS")}>CSS</Button>

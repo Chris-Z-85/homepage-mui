@@ -98,6 +98,7 @@ const Skills = () => {
       </Typography>
       <Typography
         textAlign="center"
+        width="80%"
         sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
       >
         I am currently expanding my skills by learning:
