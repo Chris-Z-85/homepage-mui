@@ -37,7 +37,6 @@ const Portfolio = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        direction="row"
         flexWrap="wrap"
         spacing={2}
       >
