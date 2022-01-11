@@ -35,7 +35,7 @@ const projects = [
     description: "React application designed and built by myself.",
     stack: ["React", "Material UI", "Formik & Yup"],
     github: "https://github.com/Chris-Z-85/homepage-mui",
-    demo: "https://chris-z.netlify.app/",
+    demo: "https://chris-z.dev/",
     image: homepage,
   },
   {
