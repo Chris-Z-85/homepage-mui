@@ -43,7 +43,7 @@ const Footer = () => {
           fontSize: { xs: "0.9rem", md: "1.10rem" },
         }}
       >
-        © {currentYear}| Designed & coded by Chris Zbrojkiewicz
+        © {currentYear} | Designed & coded by Chris Zbrojkiewicz
       </Typography>
     </Container>
   );

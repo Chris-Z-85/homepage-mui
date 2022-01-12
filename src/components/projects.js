@@ -11,8 +11,8 @@ const projects = [
     title: "The Movies App",
     subheading: "Fully responsive movies application",
     description:
-      "Website with movies built in React using The Movie Database API (TMDB).",
-    stack: ["React", "SASS", "API (www.themoviedb.org)", "AXIOS"],
+      "Website with movies built in React using The Movie Database API (TMDB - www.themoviedb.org).",
+    stack: ["React", "SASS", "API ", "AXIOS"],
     github: "https://github.com/Chris-Z-85/movies-app",
     demo: "https://themoviesapp.netlify.app",
     image: themoviesapp,
@@ -23,7 +23,7 @@ const projects = [
     subheading: "Figma project turned into reality!",
     description:
       "Fully functioning, modern and responsive React website based on a Figma design.",
-    stack: ["React", "CSS BEM Model", "React Icons"],
+    stack: ["React", "BEM Model", "React Icons"],
     github: "https://github.com/Chris-Z-85/GTP3",
     demo: "https://gtp3-open-ai.netlify.app/",
     image: gpt3,
@@ -43,13 +43,8 @@ const projects = [
     title: "The Chat App",
     subheading: "Firebase Chat Application",
     description:
-      "Chat Application created with React and Firebase including Google and Facebook login authentication.",
-    stack: [
-      "React (Routing, Context API)",
-      "Firebase (Social Login)",
-      "Chat Engine (https://chatengine.io/)",
-      "REST API",
-    ],
+      "Chat Application (chatengine.io) created with React (Routing, Context API) and Firebase (Social Login) including Google and Facebook login authentication.",
+    stack: ["React", "Firebase", "Chat Engine", "REST API"],
     github: "https://github.com/Chris-Z-85/the-chat-app",
     demo: "https://the-chat-app.netlify.app",
     image: thechatapp,

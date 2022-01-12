@@ -37,26 +37,35 @@ const Project = ({ props }) => {
         <Typography sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
           {props.description}
         </Typography>
-        <ul>
+        <Stack direction="row" spacing={2}>
           {props.stack.map((item, index) => (
             <Typography sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
-              <li style={{ listStyle: "square inside" }} key={index}>
+              <Button
+                variant="outlined"
+                size="small"
+                color="primary"
+                sx={{
+                  cursor: "default",
+                  fontSize: "14px",
+                }}
+              >
                 {item}
-              </li>
+              </Button>
             </Typography>
           ))}
-        </ul>
+        </Stack>
         <Stack
           direction="row"
           spacing={2}
           sx={{
             display: "flex",
             justifyContent: "center",
+            padding: "2rem",
           }}
         >
           {props.github !== "" && (
             <Button
-              variant="outlined"
+              variant="contained"
               href={props.github}
               target="_blank"
               sx={{ width: "120px" }}
@@ -66,12 +75,12 @@ const Project = ({ props }) => {
           )}
           {props.demo !== "" && (
             <Button
-              variant="outlined"
+              variant="contained"
               href={props.demo}
               target="_blank"
               sx={{ width: "120px" }}
             >
-              DEMO
+              LIVE
             </Button>
           )}
         </Stack>
