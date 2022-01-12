@@ -94,7 +94,7 @@ const About = () => {
                 },
               }}
             >
-              <Typography>My Career</Typography>
+              <Typography>My Career and Education</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
@@ -251,167 +251,164 @@ const About = () => {
                 Here I focused on practical learning by{" "}
                 <b>building various projects</b> for my <b>portfolio</b>.
               </Typography>
+              <Typography
+                sx={{
+                  fontSize: "1.5rem",
+                  fontFamily: "Rubik",
+                }}
+              >
+                Education
+              </Typography>
+              <List>
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <SchoolIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="BA: Information Technology" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <SchoolIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="MA: English Language and Literature" />
+                  </ListItemButton>
+                </ListItem>
+              </List>
+              <Typography
+                sx={{
+                  fontSize: "1.5rem",
+                  fontFamily: "Rubik",
+                }}
+              >
+                Certificates
+              </Typography>
+              <List>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href={spiced}>
+                    <ListItemIcon>
+                      <EmojiEventsIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Full Stack Web Development @ SPICED Academy, Berlin" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href={udemy}>
+                    <ListItemIcon>
+                      <EmojiEventsIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="The Complete Web Developer: Zero to Mastery @ Udemy" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href={freecodecamp}>
+                    <ListItemIcon>
+                      <EmojiEventsIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Responsive Web Design @ freeCodeCamp" />
+                  </ListItemButton>
+                </ListItem>
+              </List>
             </AccordionDetails>
           </Accordion>
-          {/* <Typography sx={{ fontSize: "1.25rem", marginBottom: "1rem" }}>
-            I am currently searching for an opportunity as <b>Web Developer</b>.
-          </Typography> */}
-          <Typography
+          <Grid
+            item
+            flexDirection={{ xs: "column", md: "row" }}
+            justifyContent={{ xs: "center", md: "space-between" }}
+            alignItems={{ xs: "center", md: "space-between" }}
             sx={{
-              fontSize: "1.25rem",
-              marginTop: "1rem",
-              marginBottom: "1rem",
-              textAlign: "center",
-            }}
-          >
-            <b>Check out my work. Get in touch. Let's work together !</b>
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: "1.5rem",
-              fontFamily: "Rubik",
-            }}
-          >
-            Education
-          </Typography>
-          <List>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <SchoolIcon />
-                </ListItemIcon>
-                <ListItemText primary="BA: Information Technology" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <SchoolIcon />
-                </ListItemIcon>
-                <ListItemText primary="MA: English Language and Literature" />
-              </ListItemButton>
-            </ListItem>
-          </List>
-          <Typography
-            sx={{
-              fontSize: "1.5rem",
-              fontFamily: "Rubik",
-            }}
-          >
-            Certificates
-          </Typography>
-          <List>
-            <ListItem disablePadding>
-              <ListItemButton component="a" href={spiced}>
-                <ListItemIcon>
-                  <EmojiEventsIcon />
-                </ListItemIcon>
-                <ListItemText primary="Full Stack Web Development @ SPICED Academy, Berlin" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton component="a" href={udemy}>
-                <ListItemIcon>
-                  <EmojiEventsIcon />
-                </ListItemIcon>
-                <ListItemText primary="The Complete Web Developer: Zero to Mastery @ Udemy" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton component="a" href={freecodecamp}>
-                <ListItemIcon>
-                  <EmojiEventsIcon />
-                </ListItemIcon>
-                <ListItemText primary="Responsive Web Design @ freeCodeCamp" />
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </Card>
-        <Grid
-          item
-          flexDirection={{ xs: "column", md: "row" }}
-          justifyContent={{ xs: "center", md: "space-between" }}
-          alignItems={{ xs: "center", md: "flex-end" }}
-          sx={{
-            padding: "2rem",
-            display: "flex",
-            gap: "50px",
-          }}
-        >
-          <Box
-            sx={{
+              padding: "2rem",
               display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
-              alignItems: "center",
-              justifyContent: "space-between",
+              gap: "50px",
             }}
           >
-            <Typography variant="h6" sx={{ fontFamily: "Permanent Marker" }}>
-              Get In Touch
-            </Typography>
-            <svg
-              width="57"
-              height="61"
-              viewBox="0 0 57 61"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1rem",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
             >
-              <g clipPath="url(#clip0)">
-                <path
-                  d="M27.24 59.656c3.056-4.048 6.993-7.064 11.733-8.884 1.044-.403.601-2.019-.494-1.686a27.466 27.466 0 00-7.22 3.363c4.386-6.307 6.793-13.976 7.43-21.601.826-9.907-1.403-22-8.078-29.72-.977-1.136-3.166.194-2.558 1.583C30 7.16 32.27 11.285 33.525 16.038c1.242 4.705 1.793 9.525 1.53 14.385-.434 8.056-3.296 15.458-7.17 22.389-.355-2.259-1.235-4.428-2.668-6.287-1.3-1.681-4.121-.045-2.869 1.776 2.13 3.113 3.128 6.322 2.577 10.122-.167 1.186 1.416 2.426 2.317 1.233z"
-                  fill="currentColor"
-                  fillOpacity=".85"
-                ></path>
-              </g>
-              <defs>
-                <clipPath id="clip0">
+              <Typography variant="h6" sx={{ fontFamily: "Permanent Marker" }}>
+                Get In Touch
+              </Typography>
+              <svg
+                width="57"
+                height="61"
+                viewBox="0 0 57 61"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clipPath="url(#clip0)">
                   <path
-                    transform="rotate(148.25 56.2 41.845)"
-                    fill="#fff"
-                    d="M56.2 41.845h35.638v49.209H56.2z"
+                    d="M27.24 59.656c3.056-4.048 6.993-7.064 11.733-8.884 1.044-.403.601-2.019-.494-1.686a27.466 27.466 0 00-7.22 3.363c4.386-6.307 6.793-13.976 7.43-21.601.826-9.907-1.403-22-8.078-29.72-.977-1.136-3.166.194-2.558 1.583C30 7.16 32.27 11.285 33.525 16.038c1.242 4.705 1.793 9.525 1.53 14.385-.434 8.056-3.296 15.458-7.17 22.389-.355-2.259-1.235-4.428-2.668-6.287-1.3-1.681-4.121-.045-2.869 1.776 2.13 3.113 3.128 6.322 2.577 10.122-.167 1.186 1.416 2.426 2.317 1.233z"
+                    fill="currentColor"
+                    fillOpacity=".85"
                   ></path>
-                </clipPath>
-              </defs>
-            </svg>
-            <Stack spacing={2} direction="row">
-              <IconButton
-                color="primary"
-                href="mailto:chris.z@aol.com"
-                title="Email"
-              >
-                <EmailIcon sx={{ fontSize: 45 }} />
-              </IconButton>
-              <IconButton
-                color="primary"
-                href="https://github.com/Chris-Z-85"
-                title="GitHub"
-                target="_blank"
-              >
-                <GitHubIcon sx={{ fontSize: 45 }} />
-              </IconButton>
-              <IconButton
-                color="primary"
-                href="https://www.linkedin.com/in/chrisZ85/"
-                title="LinkedIn"
-                target="_blank"
-              >
-                <LinkedInIcon sx={{ fontSize: 45 }} />
-              </IconButton>
-            </Stack>
-          </Box>
-          <MiniCv>
-            <img src={chris_z} alt="Chris Z." width="55px" />
-            <Line color="primary" />
-            <Line />
-            <Line />
-            <Line />
-            <Button variant="contained" href={CV} target="_blank" title="CV">
-              My CV&nbsp;
-              <CloudDownloadIcon fontSize="1rem" />
-            </Button>
-          </MiniCv>
-        </Grid>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path
+                      transform="rotate(148.25 56.2 41.845)"
+                      fill="#fff"
+                      d="M56.2 41.845h35.638v49.209H56.2z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
+              <Stack spacing={2} direction="row">
+                <IconButton
+                  color="primary"
+                  href="mailto:chris.z@aol.com"
+                  title="Email"
+                >
+                  <EmailIcon sx={{ fontSize: 45 }} />
+                </IconButton>
+                <IconButton
+                  color="primary"
+                  href="https://github.com/Chris-Z-85"
+                  title="GitHub"
+                  target="_blank"
+                >
+                  <GitHubIcon sx={{ fontSize: 45 }} />
+                </IconButton>
+                <IconButton
+                  color="primary"
+                  href="https://www.linkedin.com/in/chrisZ85/"
+                  title="LinkedIn"
+                  target="_blank"
+                >
+                  <LinkedInIcon sx={{ fontSize: 45 }} />
+                </IconButton>
+              </Stack>
+            </Box>
+            <Typography
+              sx={{
+                fontSize: "1.25rem",
+                marginTop: "1rem",
+                marginBottom: "1rem",
+                textAlign: "center",
+              }}
+            >
+              <b>Check out my work. Get in touch. Let's work together!</b>
+            </Typography>
+            <MiniCv>
+              <img src={chris_z} alt="Chris Z." width="55px" />
+              <Line color="primary" />
+              <Line />
+              <Line />
+              <Line />
+              <Button variant="contained" href={CV} target="_blank" title="CV">
+                My CV&nbsp;
+                <CloudDownloadIcon fontSize="1rem" />
+              </Button>
+            </MiniCv>
+          </Grid>
+        </Card>
       </Grid>
     </Grid>
   );
