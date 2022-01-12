@@ -1,8 +1,6 @@
 import gpt3 from "../../src/images/projects/gpt-3.png";
 import polskieni from "../../src/images/projects/polskieni.png";
 import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
-import homepage from "../../src/images/projects/homepage.png";
-import thechatapp from "../../src/images/projects/thechatapp.png";
 import themoviesapp from "../../src/images/projects/themoviesapp.png";
 
 const projects = [
@@ -30,27 +28,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "Homepage",
-    subheading: "My personal homepage with Portfolio",
-    description: "React application designed and built by myself.",
-    stack: ["React", "Material UI", "Formik & Yup"],
-    github: "https://github.com/Chris-Z-85/homepage-mui",
-    demo: "https://chris-z.dev/",
-    image: homepage,
-  },
-  {
-    id: 4,
-    title: "The Chat App",
-    subheading: "Firebase Chat Application",
-    description:
-      "Chat Application (chatengine.io) created with React (Routing, Context API) and Firebase (Social Login) including Google and Facebook login authentication.",
-    stack: ["React", "Firebase", "Chat Engine", "REST API"],
-    github: "https://github.com/Chris-Z-85/the-chat-app",
-    demo: "https://the-chat-app.netlify.app",
-    image: thechatapp,
-  },
-  {
-    id: 5,
     title: "Polish Northern Ireland Community",
     subheading: "Polish Primary School in Northern Ireland",
     description:
@@ -61,7 +38,7 @@ const projects = [
     image: polskieni,
   },
   {
-    id: 6,
+    id: 4,
     title: "Fretboard Master",
     subheading: "Fretboard tool for guitarists",
     description:
