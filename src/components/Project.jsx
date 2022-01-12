@@ -37,7 +37,7 @@ const Project = ({ props }) => {
         <Typography sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
           {props.description}
         </Typography>
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" flexWrap="wrap" gap="1rem">
           {props.stack.map((item, index) => (
             <Typography sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
               <Button
@@ -56,10 +56,11 @@ const Project = ({ props }) => {
         </Stack>
         <Stack
           direction="row"
-          spacing={2}
+          justifyContent="center"
+          flexWrap="wrap"
+          // spacing={2}
+          gap="1rem"
           sx={{
-            display: "flex",
-            justifyContent: "center",
             padding: "2rem",
           }}
         >
