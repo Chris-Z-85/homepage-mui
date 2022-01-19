@@ -2,10 +2,22 @@ import gpt3 from "../../src/images/projects/gpt-3.png";
 import polskieni from "../../src/images/projects/polskieni.png";
 import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
 import themoviesapp from "../../src/images/projects/themoviesapp.png";
+import calc from "../../src/images/projects/calc.png";
 
 const projects = [
   {
     id: 1,
+    title: "The Calc App",
+    subheading: "Responsive calculator with themes",
+    description:
+      "Simple calculator built according to the Frontend Mentor design (www.frontendmentor.io) with ability to change colour themes.",
+    stack: ["HTML", "CSS", "BEM ", "JavaScript"],
+    github: "https://github.com/Chris-Z-85/calculator-app",
+    demo: "https://calc-chris-z.netlify.app",
+    image: calc,
+  },
+  {
+    id: 2,
     title: "The Movies App",
     subheading: "Fully responsive movies application",
     description:
@@ -16,7 +28,7 @@ const projects = [
     image: themoviesapp,
   },
   {
-    id: 2,
+    id: 3,
     title: "GPT-3 OpenAI Website",
     subheading: "Figma project turned into reality!",
     description:
@@ -27,7 +39,7 @@ const projects = [
     image: gpt3,
   },
   {
-    id: 3,
+    id: 4,
     title: "Polish Northern Ireland Community",
     subheading: "Polish Primary School in Northern Ireland",
     description:
@@ -38,7 +50,7 @@ const projects = [
     image: polskieni,
   },
   {
-    id: 4,
+    id: 5,
     title: "Fretboard Master",
     subheading: "Fretboard tool for guitarists",
     description:
