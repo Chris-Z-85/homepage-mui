@@ -104,7 +104,6 @@ const Hero = () => {
               <Link
                 href="#portfolio"
                 underline="none"
-                underline="none"
                 sx={{
                   fontSize: "1rem",
                   fontWeight: "500",
