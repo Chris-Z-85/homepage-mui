@@ -56,12 +56,10 @@ const Project = ({ props }) => {
         </Stack>
         <Stack
           direction="row"
-          justifyContent="center"
           flexWrap="wrap"
-          // spacing={2}
           gap="1rem"
           sx={{
-            padding: "2rem",
+            marginTop: "2rem",
           }}
         >
           {props.github !== "" && (

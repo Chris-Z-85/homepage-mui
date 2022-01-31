@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Button, Stack, Link } from "@mui/material";
+import { Grid, Typography, Stack, Link } from "@mui/material";
 import Chris from "../images/chris_z-circle.svg";
 import Typewriter from "typewriter-effect";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -76,15 +76,56 @@ const Hero = () => {
               direction="row"
               justifyContent={{ xs: "center", md: "flex-start" }}
             >
-              <Link href="#about" underline="none" color="inherit">
-                <Button variant="outlined" sx={{ width: "150px" }}>
-                  About me <ArrowForwardIosIcon fontSize="1rem" />
-                </Button>
+              <Link
+                href="#about"
+                underline="none"
+                sx={{
+                  fontSize: "1rem",
+                  fontWeight: "500",
+                  width: "150px",
+                  color: "#673ab7",
+                  textTransform: "uppercase",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "1px solid rgba(103, 58, 183, 0.5)",
+                  borderRadius: "5px",
+                  padding: "5px 15px",
+                  transition:
+                    "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+                  "&:hover": {
+                    background: "rgba(103, 58, 183, 0.08)",
+                    border: "1px solid #673ab7",
+                  },
+                }}
+              >
+                About me <ArrowForwardIosIcon fontSize="1rem" />
               </Link>
-              <Link href="#portfolio" underline="none" color="inherit">
-                <Button variant="outlined" sx={{ width: "150px" }}>
-                  My works <ArrowForwardIosIcon fontSize="1rem" />
-                </Button>
+              <Link
+                href="#portfolio"
+                underline="none"
+                underline="none"
+                sx={{
+                  fontSize: "1rem",
+                  fontWeight: "500",
+                  width: "150px",
+                  color: "#673ab7",
+                  textTransform: "uppercase",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "1px solid rgba(103, 58, 183, 0.5)",
+                  borderRadius: "5px",
+                  padding: "5px 15px",
+                  transition:
+                    "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+                  "&:hover": {
+                    background: "rgba(103, 58, 183, 0.08)",
+                    border: "1px solid #673ab7",
+                  },
+                }}
+              >
+                My works <ArrowForwardIosIcon fontSize="1rem" />
               </Link>
             </Stack>
           </Grid>
