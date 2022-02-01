@@ -21,7 +21,7 @@ export const ColorModeContextProvider = ({ children }) => {
         palette: {
           mode,
           primary: {
-            main: `${deepPurple[500]}`,
+            main: "#9b63ff",
             mainGradient: "linear-gradient(to right, tomato, cyan)",
           },
         },

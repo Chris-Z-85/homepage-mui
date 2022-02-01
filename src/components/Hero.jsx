@@ -84,7 +84,7 @@ const Hero = () => {
                     fontSize: "1rem",
                     fontWeight: "500",
                     width: "150px",
-                    color: "#673ab7",
+                    color: "#9b63ff",
                     textTransform: "uppercase",
                     display: "flex",
                     justifyContent: "center",
@@ -96,7 +96,7 @@ const Hero = () => {
                       "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
                     "&:hover": {
                       background: "rgba(103, 58, 183, 0.08)",
-                      border: "1px solid #673ab7",
+                      border: "1px solid #9b63ff",
                     },
                   }}
                 >
@@ -109,7 +109,7 @@ const Hero = () => {
                     fontSize: "1rem",
                     fontWeight: "500",
                     width: "150px",
-                    color: "#673ab7",
+                    color: "#9b63ff",
                     textTransform: "uppercase",
                     display: "flex",
                     justifyContent: "center",
@@ -121,7 +121,7 @@ const Hero = () => {
                       "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
                     "&:hover": {
                       background: "rgba(103, 58, 183, 0.08)",
-                      border: "1px solid #673ab7",
+                      border: "1px solid #9b63ff",
                     },
                   }}
                 >

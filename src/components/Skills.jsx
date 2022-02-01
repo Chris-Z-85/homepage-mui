@@ -81,9 +81,7 @@ const Skills = () => {
                   inline={true}
                   style={{ fontSize: "2rem" }}
                 />
-                <Typography sx={{ color: `${deepPurple[500]}` }}>
-                  {item.name}
-                </Typography>
+                <Typography sx={{ color: "#9b63ff" }}>{item.name}</Typography>
               </Card>
             </Grid>
           ))}
@@ -131,9 +129,7 @@ const Skills = () => {
                   inline={true}
                   style={{ fontSize: "2rem" }}
                 />
-                <Typography sx={{ color: `${deepPurple[500]}` }}>
-                  {item.name}
-                </Typography>
+                <Typography sx={{ color: "#9b63ff" }}>{item.name}</Typography>
               </Card>
             </Grid>
           ))}

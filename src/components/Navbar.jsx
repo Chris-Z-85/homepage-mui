@@ -119,7 +119,6 @@ const Navbar = () => {
               </Box>
               <Switch
                 color="default"
-                aria-label="theme"
                 defaultChecked
                 onClick={colorMode.toggleColorMode}
               />

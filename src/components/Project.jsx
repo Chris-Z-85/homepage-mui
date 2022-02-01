@@ -25,7 +25,7 @@ const Project = ({ props }) => {
       >
         <Typography
           sx={{
-            color: `${deepPurple[500]}`,
+            color: "#9b63ff",
             fontSize: { xs: "1.5rem", md: "2rem" },
           }}
         >

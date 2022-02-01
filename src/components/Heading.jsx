@@ -28,7 +28,7 @@ const Heading = ({ title, subtitle }) => {
       </Typography>
       <Typography
         sx={{
-          color: `${deepPurple[500]}`,
+          color: "#9b63ff",
           position: "absolute",
           bottom: "-0.5rem",
           textTransform: "uppercase",
