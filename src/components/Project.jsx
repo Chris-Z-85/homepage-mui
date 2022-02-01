@@ -115,7 +115,11 @@ const Project = ({ props }) => {
               }}
             ></Box>
           </Box>
-          <img src={props.image} alt={props.title} />
+          <img
+            src={props.image}
+            alt={props.title}
+            style={{ width: "100%", height: "auto" }}
+          />
         </Grid>
       </a>
     </Grid>
