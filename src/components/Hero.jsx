@@ -7,7 +7,7 @@ import ScrollDown from "./ScrollDown";
 
 const Hero = () => {
   return (
-    <title>
+    <article>
       <Grid
         container
         direction="column"
@@ -136,7 +136,7 @@ const Hero = () => {
         </Grid>
         <ScrollDown />
       </Grid>
-    </title>
+    </article>
   );
 };
 
