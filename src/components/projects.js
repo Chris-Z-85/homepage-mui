@@ -1,8 +1,8 @@
-import gpt3 from "../../src/images/projects/gpt-3.png";
-import polskieni from "../../src/images/projects/polskieni.png";
-import fretboardmaster from "../../src/images/projects/fretboardmaster.png";
-import themoviesapp from "../../src/images/projects/themoviesapp.png";
-import calc from "../../src/images/projects/calc.png";
+import gpt3 from "../../src/images/projects/gpt-3.webp";
+import polskieni from "../../src/images/projects/polskieni.webp";
+import fretboardmaster from "../../src/images/projects/fretboardmaster.webp";
+import themoviesapp from "../../src/images/projects/themoviesapp.webp";
+import calc from "../../src/images/projects/calc.webp";
 
 const projects = [
   {
