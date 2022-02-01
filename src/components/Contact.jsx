@@ -44,68 +44,82 @@ const Contact = () => {
   };
 
   return (
-    <Container
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "1rem",
-        alignItems: "center",
-        marginTop: "2rem",
-      }}
-      id="contact"
-    >
-      <Heading title="Contact" subtitle="Get in touch" />
-      <Typography
-        sx={{ fontSize: "1.25rem", marginBottom: "2rem", textAlign: "center" }}
-      >
-        Got a question or want to work together?
-      </Typography>
-      <Typography
-        sx={{ fontSize: "1.25rem", marginBottom: "2rem", textAlign: "center" }}
-      >
-        Fill in your info in the form below and I&nbsp;look forward to hearing
-        from you!
-      </Typography>
-      <Typography>{formMsg}</Typography>
-      <Formik
-        initialValues={{
-          ...INITIAL_FORM_STATE,
+    <article>
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+          alignItems: "center",
+          marginTop: "2rem",
         }}
-        validationSchema={FORM_VALIDATION}
-        onSubmit={(values, { setSubmitting, resetForm }) => {
-          setSubmitting(true);
-          handleSubmit(values);
-          resetForm();
-          setSubmitting(false);
-        }}
+        id="contact"
       >
-        {({ isSubmitting }) => (
-          <Form>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1rem",
-              }}
-            >
+        <Heading title="Contact" subtitle="Get in touch" />
+        <Typography
+          sx={{
+            fontSize: "1.25rem",
+            marginBottom: "2rem",
+            textAlign: "center",
+          }}
+        >
+          Got a question or want to work together?
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: "1.25rem",
+            marginBottom: "2rem",
+            textAlign: "center",
+          }}
+        >
+          Fill in your info in the form below and I&nbsp;look forward to hearing
+          from you!
+        </Typography>
+        <Typography>{formMsg}</Typography>
+        <Formik
+          initialValues={{
+            ...INITIAL_FORM_STATE,
+          }}
+          validationSchema={FORM_VALIDATION}
+          onSubmit={(values, { setSubmitting, resetForm }) => {
+            setSubmitting(true);
+            handleSubmit(values);
+            resetForm();
+            setSubmitting(false);
+          }}
+        >
+          {({ isSubmitting }) => (
+            <Form>
               <Box
                 sx={{
                   display: "flex",
+                  flexDirection: "column",
                   gap: "1rem",
                 }}
               >
-                <InputField name="name" label="Name" />
-                <InputField name="email" label="Email" />
+                <Box
+                  sx={{
+                    display: "flex",
+                    gap: "1rem",
+                  }}
+                >
+                  <InputField name="name" label="Name" />
+                  <InputField name="email" label="Email" />
+                </Box>
+                <InputField name="message" label="Message" multiline rows="6" />
+                <Button
+                  type="submit"
+                  variant="contained"
+                  disabled={isSubmitting}
+                >
+                  Send
+                </Button>
               </Box>
-              <InputField name="message" label="Message" multiline rows="6" />
-              <Button type="submit" variant="contained" disabled={isSubmitting}>
-                Send
-              </Button>
-            </Box>
-          </Form>
-        )}
-      </Formik>
-    </Container>
+            </Form>
+          )}
+        </Formik>
+      </Container>
+    </article>
   );
 };
 export default Contact;

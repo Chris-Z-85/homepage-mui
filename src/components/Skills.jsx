@@ -39,105 +39,107 @@ const Skills = () => {
     { name: "MongoDB", icon: "teenyicons:mongodb-outline" },
   ];
   return (
-    <Grid
-      container
-      direction="column"
-      justifyContent="center"
-      alignItems="center"
-      marginBottom="200px"
-      id="skills"
-    >
-      <Heading title="Skills" subtitle="My powers" />
-      <Typography
-        textAlign="center"
-        sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
-      >
-        The tools and technologies I use:
-      </Typography>
+    <article>
       <Grid
         container
-        spacing={3}
-        width={{ xs: "100%", md: "40%" }}
-        justifyContent="center"
-      >
-        {stack.map((item, index) => (
-          <Grid item md={3} key={index}>
-            <Card
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "120px",
-                height: "120px",
-                textAlign: "center",
-                gap: "10px",
-                padding: "5px",
-              }}
-            >
-              <Icon
-                icon={item.icon}
-                inline={true}
-                style={{ fontSize: "2rem" }}
-              />
-              <Typography sx={{ color: `${deepPurple[500]}` }}>
-                {item.name}
-              </Typography>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-      <Typography
-        variant="h5"
-        component="div"
-        textAlign="center"
-        color="primary"
-        sx={{ padding: "2rem", marginTop: "2rem" }}
-      >
-        Learning
-      </Typography>
-      <Typography
-        textAlign="center"
-        width="80%"
-        sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
-      >
-        I am currently expanding my skills by learning:
-      </Typography>
-      <Grid
-        container
-        spacing={2}
+        direction="column"
         justifyContent="center"
         alignItems="center"
-        width={{ xs: "100%", md: "40%" }}
+        marginBottom="200px"
+        id="skills"
       >
-        {learning.map((item, index) => (
-          <Grid item md={3} key={index}>
-            <Card
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "120px",
-                height: "120px",
-                textAlign: "center",
-                gap: "10px",
-                padding: "5px",
-              }}
-            >
-              <Icon
-                icon={item.icon}
-                inline={true}
-                style={{ fontSize: "2rem" }}
-              />
-              <Typography sx={{ color: `${deepPurple[500]}` }}>
-                {item.name}
-              </Typography>
-            </Card>
-          </Grid>
-        ))}
+        <Heading title="Skills" subtitle="My powers" />
+        <Typography
+          textAlign="center"
+          sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
+        >
+          The tools and technologies I use:
+        </Typography>
+        <Grid
+          container
+          spacing={3}
+          width={{ xs: "100%", md: "40%" }}
+          justifyContent="center"
+        >
+          {stack.map((item, index) => (
+            <Grid item md={3} key={index}>
+              <Card
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "120px",
+                  height: "120px",
+                  textAlign: "center",
+                  gap: "10px",
+                  padding: "5px",
+                }}
+              >
+                <Icon
+                  icon={item.icon}
+                  inline={true}
+                  style={{ fontSize: "2rem" }}
+                />
+                <Typography sx={{ color: `${deepPurple[500]}` }}>
+                  {item.name}
+                </Typography>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+        <Typography
+          variant="h5"
+          component="div"
+          textAlign="center"
+          color="primary"
+          sx={{ padding: "2rem", marginTop: "2rem" }}
+        >
+          Learning
+        </Typography>
+        <Typography
+          textAlign="center"
+          width="80%"
+          sx={{ fontSize: "1.25rem", marginBottom: "2rem" }}
+        >
+          I am currently expanding my skills by learning:
+        </Typography>
+        <Grid
+          container
+          spacing={2}
+          justifyContent="center"
+          alignItems="center"
+          width={{ xs: "100%", md: "40%" }}
+        >
+          {learning.map((item, index) => (
+            <Grid item md={3} key={index}>
+              <Card
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "120px",
+                  height: "120px",
+                  textAlign: "center",
+                  gap: "10px",
+                  padding: "5px",
+                }}
+              >
+                <Icon
+                  icon={item.icon}
+                  inline={true}
+                  style={{ fontSize: "2rem" }}
+                />
+                <Typography sx={{ color: `${deepPurple[500]}` }}>
+                  {item.name}
+                </Typography>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
-    </Grid>
+    </article>
   );
 };
 

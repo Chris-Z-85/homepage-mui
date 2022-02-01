@@ -15,12 +15,16 @@ const App = () => {
   return (
     <ColorModeContextProvider>
       <CssBaseline enableColorScheme />
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Contact />
+      </main>
       <Footer />
       <ScrollToTop />
     </ColorModeContextProvider>

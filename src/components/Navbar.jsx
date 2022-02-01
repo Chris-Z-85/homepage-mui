@@ -46,7 +46,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <navbar>
       {isVisible && (
         <AppBar
           position="static"
@@ -127,7 +127,7 @@ const Navbar = () => {
           </Container>
         </AppBar>
       )}
-    </>
+    </navbar>
   );
 };
 export default Navbar;
