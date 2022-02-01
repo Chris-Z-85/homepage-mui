@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Card, Container, Box, Typography, Button, Stack } from "@mui/material";
 import Project from "./Project";
 import Heading from "./Heading";
-import { deepPurple } from "@mui/material/colors/";
 import projects from "./projects";
 
 const Portfolio = () => {

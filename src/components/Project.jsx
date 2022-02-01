@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Box, Stack, Button, Typography } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
-import { deepPurple, grey } from "@mui/material/colors/";
 
 const Project = ({ props }) => {
   return (

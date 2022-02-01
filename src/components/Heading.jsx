@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { grey, deepPurple } from "@mui/material/colors/";
+import { grey } from "@mui/material/colors/";
 
 const Heading = ({ title, subtitle }) => {
   return (

@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, Typography, Card } from "@mui/material";
 import { Icon } from "@iconify/react";
 import Heading from "./Heading";
-import { deepPurple } from "@mui/material/colors/";
 
 const Skills = () => {
   const stack = [
