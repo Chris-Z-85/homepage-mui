@@ -67,7 +67,7 @@ const Project = ({ props }) => {
               variant="contained"
               href={props.github}
               target="_blank"
-              sx={{ width: "120px" }}
+              sx={{ width: "120px", backgroundColor: "#5774FF" }}
             >
               GITHUB
             </Button>
@@ -77,7 +77,7 @@ const Project = ({ props }) => {
               variant="contained"
               href={props.demo}
               target="_blank"
-              sx={{ width: "120px" }}
+              sx={{ width: "120px", backgroundColor: "#5774FF" }}
             >
               LIVE
             </Button>

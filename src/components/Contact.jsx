@@ -111,6 +111,7 @@ const Contact = () => {
                   type="submit"
                   variant="contained"
                   disabled={isSubmitting}
+                  sx={{ backgroundColor: "#5774FF" }}
                 >
                   Send
                 </Button>

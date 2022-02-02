@@ -413,6 +413,7 @@ const About = () => {
                   href={CV}
                   target="_blank"
                   title="CV"
+                  sx={{ backgroundColor: "#5774FF" }}
                 >
                   My CV&nbsp;
                   <CloudDownloadIcon fontSize="1rem" />

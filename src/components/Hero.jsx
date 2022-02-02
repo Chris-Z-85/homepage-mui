@@ -106,22 +106,21 @@ const Hero = () => {
                   href="#portfolio"
                   underline="none"
                   sx={{
+                    background: "#5774FF",
                     fontSize: "1rem",
                     fontWeight: "500",
                     width: "150px",
-                    color: "#9b63ff",
+                    color: "black",
                     textTransform: "uppercase",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    border: "1px solid rgba(103, 58, 183, 0.5)",
                     borderRadius: "5px",
                     padding: "5px 15px",
                     transition:
                       "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
                     "&:hover": {
-                      background: "rgba(103, 58, 183, 0.08)",
-                      border: "1px solid #9b63ff",
+                      background: "#7574FF",
                     },
                   }}
                 >
